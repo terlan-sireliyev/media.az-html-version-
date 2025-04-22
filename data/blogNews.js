@@ -185,5 +185,152 @@ export const data = [
         description:
             "İtaliya A Seriyasında Roma Papasının ölümü ilə əlaqədar təxirə salınan oyunların tarixi açıqlanıb. Bizim.Media xəbər verir ki, bu barədə qurumun rəsmi saytı məlumat yayıb. aprelin 23-də keçiriləcək. Görüşlər Bakı vaxtı ilə saat 20:30-da başlayacaq."
     },
+    {
+        id: 22,
+        img: "https://bizim.media/file/articles/2025/04/21/1745242852_1.jpg",
+        title: "“İmişli” fanatlarına ŞAD XƏBƏR",
+        category: "İdman",
+        time: "09:45",
+        description:
+            "Birinci divizionda oynayan “İmişli” klubu Premyer Liqada oynamaqda israrlıdır. Hazırda turnir cədvəlində ikinci pillədə qərarlaşan bölgə təmsilçisi AFFA-nın lisenziyalaşdırma ilə bağlı bütün tələblərini yerinə yetirib. Bu barədə Bizim.Media-ya açıqlama verən klubun icraçı direktoru Aqşin Mürsəlov Premyer Liqa üçün iddialı klub formalaşdırmaq istədiklərini dedi:"
+    }, {
+        id: 23,
+        img: "https://bizim.media/file/articles/2025/04/22/1745266942_5202085722474016796.jpg",
+        title: "“Qalatasaray” Belçika millisinin üzvünü transfer etmək İSTƏYİR",
+        category: "İdman",
+        time: "09:45",
+        description:
+            "Türkiyənin Qalatasaray klubu növbəti mövsüm üçün müdafiə xəttini yeni oyunçu ilə gücləndirməyi planlaşdırır. Bizim.Media xəbər verir ki, İstanbul klubu Lester Siti də çıxış edən Vaut Fası transfer etmək istəyir. Bu barədə Belçika mətbuatı məlumat yayıb. Qalatasaray belçikalı futbolçunun klubunun Premyer Liqanı tərk etməsindən yararlanıb onu heyətinə qatmağa çalışacaq. 27 yaşlı mərkəz müdafiəçisi ilə Latsio və Almaniyanın bir neçə klubu da yaxından maraqlanır."
+    }, {
+        id: 24,
+        img: "https://bizim.media/file/articles/2025/04/22/1745266440_5202085722474016800.jpg",
+        title: "Avroliqada ilin oyunçusu MƏLUM OLDU",
+        category: "İdman",
+        time: "09:45",
+        description:
+            "“Panatinaikos”un müdafiəçisi Kendrik Nann bu mövsüm basketbol üzrə Avroliqanın müntəzəm mövsümünün Ən Dəyərli Oyunçusu (MVP) seçilib. Bizim.Media xəbər verir ki, bu barədə “Eurohoops” məlumat yayıb. Tezliklə bununla bağlı Avroliqanın rəsmi elanının veriləcəyi gözlənilir. Bu mövsüm Nann Avroliqanın adi mövsümünün 33 oyununda iştirak edib, orta hesabla 21,1 xal, 3,6 ribaund və 4,3 məhsuldar ötürmə ilə yadda qalıb. Kendrik iki xallıq atışlarda 57,3 faiz, üçlükdə 42,6 faiz və sərbəst atışlarda 86 faiz dəqiqlik nümayiş etdirib."
+    }, {
+        id: 25,
+        img: "https://bizim.media/file/articles/2025/04/21/1745256580_17452538306013836534_1200x630.jpg",
+        title: "Qukasyan Xocalı soyqırımına rəhbərlik edənləri İFŞA ETDİ: Serj Sarkisyan və Ter-Tadevosyan - FOTO",
+        category: "Region",
+        time: "09:45",
+        description:
+            "Ermənistanın Azərbaycana qarşı hərbi təcavüzü nəticəsində sülh və insanlıq əleyhinə cinayətlər, müharibə cinayətləri, o cümlədən təcavüzkar müharibənin hazırlanması və aparılması, soyqırımı, müharibə qanunlarını və qaydalarını pozma, habelə terrorçuluq, terrorçuluğu maliyyələşdirmə, hakimiyyəti zorla ələ keçirmə, onu zorla saxlama və digər çoxsaylı cinayətlər törətməkdə təqsirləndirilən Ermənistan Respublikasının vətəndaşları Arayik Harutyunyan, Arkadi Qukasyan, Bako Sahakyan, David İşxanyan, David Babayan, Levon Mnatsakanyan və digərlərinin barəsində olan cinayət işləri üzrə açıq məhkəmə prosesinin baxış iclası aprelin 21-də davam etdirilib."
+    }, {
+        id: 26,
+        img: "https://bizim.media/file/articles/2025/04/17/1744911429_1744909478651992837_1200x630.jpg",
+        title: "“Xocalı soyqırımının təşkilatçıları zaman-zaman Ermənistan rəhbərliyində təmsil olunublar” – MƏHKƏMƏ/FOTO",
+        category: "Region",
+        time: "09:45",
+        description:
+            "Ermənistanın Azərbaycana qarşı hərbi təcavüzü nəticəsində sülh və insanlıq əleyhinə cinayətlər, müharibə cinayətləri, o cümlədən təcavüzkar müharibənin hazırlanması və aparılması, soyqırımı, müharibə qanunlarını və qaydalarını pozma, habelə terrorçuluq, terrorçuluğu maliyyələşdirmə, hakimiyyəti zorla ələ keçirmə, onu zorla saxlama və digər çoxsaylı cinayətlər törətməkdə təqsirləndirilən Ermənistan Respublikasının vətəndaşları Arayik Harutyunyan, Arkadi Qukasyan, Bako Sahakyan, David İşxanyan, David Babayan, Levon Mnatsakanyan və digərlərinin barəsində olan cinayət işləri üzrə açıq məhkəmə prosesinin baxış iclası aprelin 17-də davam etdirilib."
+    }, {
+        id: 27,
+        img: "https://bizim.media/file/articles/2025/04/18/1744983408_1.jpg",
+        title: "Ermənistandan Rusiyaya qarşı növbəti HƏMLƏ",
+        category: "Region",
+        time: "09:45",
+        description:
+            "Ermənistan Radio və Televiziya Komissiyasının sədri Tiqran Akopyan ölkə ərazisində retranslyasiya Rusiya telekanallarının sayını azaltmağın zəruriliyini bəyan edib. Bizim.Media TASS-a istinadən xəbər verir ki, o, parlamentdə çıxışı zamanı deyib"
+    },
+    {
+        id: 28,
+        img: "https://bizim.media/file/articles/2025/04/15/1744710833_5472337206610880854.jpg",
+        title: "Erməni revanşizminin OYANIŞI – İrəvan sülhdən qaçmaq üçün indi də bu yola ƏL ATIR...",
+        category: "Region",
+        time: "09:45",
+        description:
+            "Ermənistanda revanşistlər yenidən baş qaldırıblar. Onlar Konstitusiya Məhkəməsinin qərarına qarşı etirazlara start veriblər. Belə ki, Ermənistan Konstitusiya Məhkəməsi ölkə konstitusiyasının preambula hissəsində müstəqillik aktına istinadı etibarsız sayıb. Ermənsitanın revanşist “Ayakve” hərəkatı bu qərara etiraz edən bəyanat yayıb. Burada qeyd edilir ki, həmin qərar konstitusiya Məhkəməsinin “Ermənistan və Qarabağın yenidən birləşdirilməsi” ilə bağlı müstəqillik bəyannaməsində təsdiq edilmiş məqsəd kimi şərh edilə bilməz. Buna görə də Ermənistanın konstitusiya öhdəliyi kimi qəbul oluna bilməz."
+    },
+    {
+        id: 29,
+        img: "https://sonxeber.az/uploads/1745229261100.jpg",
+        title: "Satıcıya saxta 100-lük verdi, daha sonra bıçaqladı",
+        category: "Kriminal",
+        time: "09:45",
+        description:
+            "Bakıda satıcıya saxta əskinas verib soyğunçuluq edən şəxs saxlanılıb."
+    },
+    {
+        id: 29,
+        img: "https://sonxeber.az/uploads/1745224346aile.jpg",
+        title: "Bir ailə dəm qazından məhv oldu - Ata, ana, 2 övlad...",
+        category: "Kriminal",
+        time: "09:45",
+        description:
+            "Tərtərdə bir ailənin 4 üzvü dəm qazından zəhərlənərək ölüb.Qəsəbədə yaşayan əslən Kəlbəcər rayonundan olan bir ailənin 4 üzvü: Tağızadə Rüfət Mais oğlu, həyat yoldaşı Tağıyeva Əfsanə Fəqan qızı və övladları Ümid və Sürəyya yaşadıqları evdə dəm qazından boğularaq ölüblər."
+    },
+    {
+        id: 29,
+        img: "https://sonxeber.az/uploads/1744282333iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.png",
+        title: "Nazim Quliyevə HÖKM OXUNDU...",
+        category: "Kriminal",
+        time: "09:45",
+        description:
+            "İdeal qəzetinin baş redaktoru Nazim Quliyevin cinayət işinin məhkəmə istintaqı başa çatıb.Oxu.Az-ın məlumatına görə, Bakı Ağır Cinayətlər Məhkəməsinin hakimi Cavid Hüseynovun sədrliyi ilə keçirilən prosesdə prokuror ittiham nitqi ilə çıxış edərək Nazim Quliyevin 9 il 6 ay azadlıqdan məhrum olunmasını məhkəməyə təklif edib. Qeyd edək ki, Nazim Quliyev Daxili İşlər Nazirliyinin Baş Mütəşəkkil Cinayətkarlıqla Mübarizə İdarəsi tərəfindən saxlanılaraq cinayət məsuliyyətinə cəlb edilib. Nazim Quliyevin barəsində Cinayət Məcəlləsinin 178.2.4-cü (xeyli miqdarda ziyan vurmaqla dələduzluq törətmək) maddəsi ilə ittiham irəli sürülüb."
+    }, {
+        id: 30,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745237531_imtahanaa.jpg",
+        title: "Qəbulda 300, 400, 700 bal sevdasını tamamilə unutmalıyıq...",
+        category: "Təhsil",
+        time: "09:45",
+        description:
+            "“Bal sistemində nəinki 10-20, hətta 40-50 ballıq fərq nisbəti belə ciddi aralıq hesab olunmur. Məsələn, asanlıqla 700 ballıq sistemdə 650-660 bal nəticə göstərənlə, 700 balı toplayan şəxsin bilik və bacarıqlarında o qədər də ciddi fərqin olmadığını deyə bilərik”. Bu barədə Modern.az-a açıqlamasında elm və təhsil eksperti Elmin Nuri deyib. Ekspertin sözlərinə görə, buradakı fərq yalnız bir neçə sualla bağlıdır: “Bir çoxu hətta 1 və ya 2 sualı cavablandıra bilmədiyi üçün maksimal nəticədən məhrum olunublar. Buna görə də biz istər 700, istərsə də hər mərhələ üzrə maksimal nəticə olan 300 və 400 balları toplayan şəxsləri digərlərindən çox da fərqləndirməməliyik”."
+    },
+    {
+        id: 31,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745257283_1cbc47dc-dffe-4191-a650-ec7eab7c82f5_envatooo121.jpg",
+        title: "Buraxılışda 250 və daha çox bal toplayanların NƏZƏRİNƏ!",
+        category: "Təhsil",
+        time: "09:45",
+        description:
+            "Yalnız Milli Müdafiə Universiteti tərəfindən təqdim olunan beynəlxalq təhsil əməkdaşlığı çərçivəsində, xüsusi təyinatlı təhsil müəssisələrinin kursantlarına unikal bir imkan təqdim olunur.  Modern.az xəbər verir ki, kursantlar qəbul balı və şəxsi istəkləri əsasında Türkiyə, Almaniya, İtaliya, Koreya və Rusiya kimi dünyanın aparıcı ölkələrinin nüfuzlu hərbi təhsil müəssisələrində tam dövlət təminatı ilə təhsillərini davam etdirmək imkanı əldə edirlər."
+    },
+    {
+        id: 32,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745238593_1743490896_repetitor.jpg",
+        title: "Azərbaycanda repetitorluq dövrü BAŞA ÇATIR",
+        category: "Təhsil",
+        time: "09:45",
+        description:
+            "Modern.az-ın məlumatına görə, təhsil eksperti Məzahir Məmmədli bildirib ki, illərdir təhsilin “olmazsa-olmazı” kimi qəbul etdiyimiz repetitorluq sistemi tədricən sıradan çıxır.DİM-in qismən mövqe yumşaltması həm şagirdlərin, həm də valideynlərin üzünü güldürüb. Artıq son iki ilin nəticəsinə görə maksimum nəticə göstərən şagird sayı təxminən 100 nəfərə çatıb (keçən il 55 bu il bu rəqəm 43-dür). Bu nəticələr arasında yalnız məktəb təhsili ilə uğur qazanan, repetitor yanına getməyən şagirdlər də var.“Bunker müəllimlər” dövrü kimi tanınan 1994-95-ci illərdən bu yana formalaşmış sistem artıq arxada qalır. Bu il müxtəlif liseylər, gimnaziyalar, hətta kənd məktəblərindən belə yüksək nəticə göstərən şagirdlərin sayı artıb. Nümunə kimi bu günlərdə sosial şəbəklərdəki müzakirələri göstərə bilərik. Gəncədə bir liseyin şagirdləri 90% yüksək nəticə əldə edib, Lənkəranın Vilavur kəndindən olan məzunların əksəriyyəti isə repetitor dəstəyi olmadan yüksək nəticələr göstəriblər. Ucqar rayonlardan maksimum 300 ballıq bir neçə məzunlarımız oldu"
+    },
+    {
+        id: 33,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
+        title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
+        category: "Təhsil",
+        time: "09:45",
+        description:
+            "Azərbaycanda bəzi məktəblərdə siniflərdəki şagird sayı normadan artıq olur. Bu, nəinki tədrisin keyfiyyətinə ciddi təsir göstərir, həm də şagirdlərin fiziki və psixoloji vəziyyətinə mənfi təsir göstərə bilir. Bu cür sıxlıq şəraitində müəllim hər bir şagirdə fərdi yanaşmaqda çətinlik çəkir, nəticədə təhsil prosesində keyfiyyət azalır. “Ümumi təhsil haqqında” Qanunun 12.8-ci maddəsinə uyğun olaraq sinif otağının bir şagird üçün müəyyən edilmiş sahə normativi nəzərə alınmalıdır. Dövlət ümumi təhsil müəssisəsində ibtidai (I-IV siniflər), ümumi orta (V-IX siniflər) və tam orta (X-XI siniflər) təhsil səviyyələri üzrə siniflər (təmayül siniflər istisna olmaqla) şagirdlərin sayı 20 nəfərdən az olmamaqla təşkil edilir. Eyni bir sinifdə şagirdlərin sayı 30 nəfərdən çox olduqda və ya şagirdlərin bir sinifdə tədrisinə sinif otağının ölçüsü imkan vermədikdə, həmin sinif üzrə ikinci paralel sinif təşkil edilir."
+    },
+    {
+        id: 33,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
+        title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
+        category: "SouTime",
+        time: "09:45",
+        description:
+            "Azərbaycanda bəzi məktəblərdə siniflərdəki şagird sayı normadan artıq olur. Bu, nəinki tədrisin keyfiyyətinə ciddi təsir göstərir, həm də şagirdlərin fiziki və psixoloji vəziyyətinə mənfi təsir göstərə bilir. Bu cür sıxlıq şəraitində müəllim hər bir şagirdə fərdi yanaşmaqda çətinlik çəkir, nəticədə təhsil prosesində keyfiyyət azalır. “Ümumi təhsil haqqında” Qanunun 12.8-ci maddəsinə uyğun olaraq sinif otağının bir şagird üçün müəyyən edilmiş sahə normativi nəzərə alınmalıdır. Dövlət ümumi təhsil müəssisəsində ibtidai (I-IV siniflər), ümumi orta (V-IX siniflər) və tam orta (X-XI siniflər) təhsil səviyyələri üzrə siniflər (təmayül siniflər istisna olmaqla) şagirdlərin sayı 20 nəfərdən az olmamaqla təşkil edilir. Eyni bir sinifdə şagirdlərin sayı 30 nəfərdən çox olduqda və ya şagirdlərin bir sinifdə tədrisinə sinif otağının ölçüsü imkan vermədikdə, həmin sinif üzrə ikinci paralel sinif təşkil edilir."
+    },
+    {
+        id: 33,
+        img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
+        title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
+        category: "Biznes",
+        time: "09:45",
+        description:
+            "Azərbaycanda bəzi məktəblərdə siniflərdəki şagird sayı normadan artıq olur. Bu, nəinki tədrisin keyfiyyətinə ciddi təsir göstərir, həm də şagirdlərin fiziki və psixoloji vəziyyətinə mənfi təsir göstərə bilir. Bu cür sıxlıq şəraitində müəllim hər bir şagirdə fərdi yanaşmaqda çətinlik çəkir, nəticədə təhsil prosesində keyfiyyət azalır. “Ümumi təhsil haqqında” Qanunun 12.8-ci maddəsinə uyğun olaraq sinif otağının bir şagird üçün müəyyən edilmiş sahə normativi nəzərə alınmalıdır. Dövlət ümumi təhsil müəssisəsində ibtidai (I-IV siniflər), ümumi orta (V-IX siniflər) və tam orta (X-XI siniflər) təhsil səviyyələri üzrə siniflər (təmayül siniflər istisna olmaqla) şagirdlərin sayı 20 nəfərdən az olmamaqla təşkil edilir. Eyni bir sinifdə şagirdlərin sayı 30 nəfərdən çox olduqda və ya şagirdlərin bir sinifdə tədrisinə sinif otağının ölçüsü imkan vermədikdə, həmin sinif üzrə ikinci paralel sinif təşkil edilir."
+    },
+    // {
+    //     id: 33,
+    //     img: "",
+    //     title: "",
+    //     category: "Təhsil",
+    //     time: "09:45",
+    //     description:
+    //         ""
+    // },
 ];
 

@@ -6,20 +6,22 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Ən son siyasət, iqtisadiyyat və region xəbərləri Bizim Media-da. Etibarlı və operativ informasiya mənbəyi.">
-    <meta name="keywords"
-        content="bizim media, xəbər, son xəbərlər, siyasət, region, iqtisadiyyat, azərbaycan xəbərləri">
+    <meta name="keywords" content="bizim media, xəbər, son xəbərlər
+        , siyasət, region, iqtisadiyyat, azərbaycan xəbərləri">
     <meta name="author" content="Bizim Media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bizim Media</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script type="module" src="script/script.js"></script>
 
 </head>
@@ -34,7 +36,7 @@
         <!-- Header -->
         <header>
             <div class="headerClasster">
-                <div class="logo"><a href="/index.html">
+                <div class="logoNavbar"><a href="/index.html">
                         <span>BİZİM</span>.MEDIA
                     </a></div>
                 <div class="socialIconsBase">
@@ -50,19 +52,84 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <!-- Navbar -->
+            <div class="navbar-wrapper">
                 <nav>
-                    <ul>
+                    <ul id="navList">
+                        <li class="active">Ana sehive</li>
+                        <li class="">Siyaset</li>
+                        <li class="">Iqtisadiyyat</li>
+                        <li class="">Cemiyyet</li>
+                        <li class="">Medeniyyet</li>
+                        <li class="">Kirminal</li>
+                        <li class="">Dunya</li>
+                        <li class="">Idman</li>
+                        <li class="">SouTime</li>
+                        <li class="">Biznes</li>
+                        <!-- Categories will be added dynamically -->
+                        <li class="dropdown" id="dropdown">
+                            Digərləri ▾
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
+
             <!-- Content -->
             <div class="layout">
                 <!-- Center Content -->
                 <div class="center">
+                    <div class="sliderBase">
+                        <div class="imgCard active">
+                            <img src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png" alt="">
+
+                            <!-- Xəbər məlumatları -->
+                            <div class="newsInfo">
+                                <h3 class="newsTitle">Xəbərin Adı</h3>
+                                <div class="newsMeta">
+                                    <span class="newsCategory">Kateqoriya: Texnologiya</span> |
+                                    <span class="newsTime">Saat: 12:45</span>
+                                </div>
+                                <!-- <p class="newsDesc">Bu bir test xəbər təsviridir. Burada qısa açıqlama yazılır.</p> -->
+                            </div>
+                        </div>
+
+                        <div class="imgCard">
+                            <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
+                            <div class="newsInfo">
+                                <h3 class="newsTitle">Başlıq 2</h3>
+                                <div class="newsMeta">
+                                    <span class="newsCategory">İdman</span> |
+                                    <span class="newsTime">Saat: 14:00</span>
+                                </div>
+                                <!-- <p class="newsDesc">Bu bir başqa xəbər təsviridir.</p> -->
+                            </div>
+                        </div>
+
+                        <div class="imgCard">
+                            <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
+                                alt="">
+                            <div class="newsInfo">
+                                <h3 class="newsTitle">Başlıq 3</h3>
+                                <div class="newsMeta">
+                                    <span class="newsCategory">Əyləncə</span> |
+                                    <span class="newsTime">Saat: 16:30</span>
+                                </div>
+                                <!-- <p class="newsDesc">Əyləncəli bir xəbər haqqında qısa məlumat.</p> -->
+                            </div>
+                        </div>
+
+                        <!-- Prev / Next düymələri -->
+                        <button class="prevBtn">❮</button>
+                        <button class="nextBtn">❯</button>
+                    </div>
+
+
+
+
                     <!-- News Cards -->
                     <div class="news-cards" id="news-container">
+
                     </div>
                     <div class="aBlockWrap">
                         <div class="aBlockTitle">
@@ -72,7 +139,6 @@
                             </div>
                         </div>
                         <div class="bigPost">
-
                             <a href="#">
                                 <div class="BigPostImage">
                                     <img src="https://bizim.media/file/articles/2025/04/21/1745260036_5202085722474016735.jpg"
@@ -143,9 +209,6 @@
                             </a>
                         </div>
                     </div>
-
-
-
                 </div>
                 <!-- Right Sidebar -->
                 <div class="rightCenterMenu">
@@ -235,6 +298,61 @@
                     </div>
                 </div>
             </div>
+            <footer class="footer">
+                <div class="footerContainer">
+                    <!-- Logo və Links -->
+                    <div class="logoBase">
+                        <div class="logo">
+                            <span class="logoIcon">B</span> BİZİM.MEDIA
+                        </div>
+
+                        <div class="footerContainerOne">
+                            <div class="footerContainer">
+                                <ul class="footerTop" id="footerTabs">
+                                    <!-- Dinamik olaraq JavaScript ilə əlavə olunacaq -->
+                                    <li>▶️Haqqimizda</li>
+                                    <li>▶️data</li>
+                                </ul>
+                            </div>
+                            <ul class="footerBottom">
+                                <li>▶️Əlaqə:</li>
+                                <li>Telefon: 050-936-83-33</li>
+                                <li>Email: example.mail@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Menyular -->
+                    <div class="footerColumn">
+                        <ul id="footerLinks">
+                            <li class="active">Ana sehive</li>
+                            <li class="">Siyaset</li>
+                            <li class="">Iqtisadiyyat</li>
+                            <li class="">Cemiyyet</li>
+                            <li class="">Medeniyyet</li>
+                            <li class="">Kirminal</li>
+                            <li class="">Dunya</li>
+                            <li class="">Idman</li>
+                            <li class="">SouTime</li>
+                            <li class="">Biznes</li>
+                            <!-- Dinamik olaraq JavaScript ilə əlavə olunacaq -->
+                        </ul>
+                    </div>
+
+                    <!-- Sosial və Creator -->
+                    <div class="footerColumn">
+                        <div class="followUs">Bizi izləyin</div>
+                        <div class="socialIcons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-telegram-plane"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="createdBy">Created by <span>: Tharlan Shiraliyev</span></div>
+                    </div>
+                </div>
+            </footer>
         </header>
         <div class="right">
             Reklamınız üçün ideal<br />məkan!

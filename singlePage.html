@@ -16,6 +16,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/singlePage.css" />
+    <link rel="stylesheet" href="css/footer.css">
+
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -23,155 +25,315 @@
 </head>
 
 <body>
-    <div class="left">
-        Reklamınız üçün ideal<br />məkan!
-    </div>
+    <div>
+        <div class="left">
+            Reklamınız üçün ideal<br />məkan!
+        </div>
 
-    <div class="right">
-        Reklamınız üçün ideal<br />məkan!
-    </div>
-
-    <header>
-        <div class="layout">
-            <div class="headerClasster">
-                <div class="logo"><a href="/index.html">
-                        <span>BİZİM</span>.MEDIA
-                    </a></div>
-                <div class="socialIconsBase">
-                    <div class="social-icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-telegram"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="hamburgerIcon">
-                        <i class="fa-solid fa-bars"></i>
+        <header>
+            <div class="layout">
+                <div class="headerClasster">
+                    <div class="logo"><a href="/index.html">
+                            <span>BİZİM</span>.MEDIA
+                        </a></div>
+                    <div class="socialIconsBase">
+                        <div class="social-icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-telegram"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="hamburgerIcon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <!-- Navbar -->
-                <nav>
-                    <ul>
-                    </ul>
-                </nav>
-            </div>
-            <div class="singlePageGrid">
-                <!-- Əsas Xəbər -->
-                <article class="blogContent">
-                    <img src="https://bizim.media/file/articles/2025/04/15/1744717884_5472337206610881187-1.jpg"
-                        alt="Azərbaycan siyasəti ilə bağlı xəbər şəkli" />
-                    <h1 class="news-title">Azərbaycan-Ermənistan Sülh Danışıqları Yenidən Gündəmdə</h1>
-                    <div class="meta">
-                        <span class="category"><i class="fas fa-tag"></i> Siyasət</span>
-                        <span class="time"><i class="far fa-clock"></i> 20 Aprel 2025, 15:30</span>
-                        <span class="views"><i class="fas fa-eye"></i> 1,452 baxış</span>
+                <div>
+                    <div class="navbar-wrapper">
+                        <nav>
+                            <ul id="navList">
+                                <li class="active">Ana sehive</li>
+                                <li class="">Siyaset</li>
+                                <li class="">Iqtisadiyyat</li>
+                                <li class="">Cemiyyet</li>
+                                <li class="">Medeniyyet</li>
+                                <li class="">Kirminal</li>
+                                <li class="">Dunya</li>
+                                <li class="">Idman</li>
+                                <li class="">SouTime</li>
+                                <li class="">Biznes</li>
+                                <!-- Categories will be added dynamically -->
+                                <li class="dropdown" id="dropdown">
+                                    Digərləri ▾
+                                    <ul class="dropdown-menu" id="dropdownMenu">
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <p class="description">
-                        Bu, xəbər haqqında ətraflı təsvir hissəsidir. Burada xəbər məzmunu ətraflı şəkildə göstərilir.
-                        Azərbaycan ilə Ermənistan arasında baş tutan son danışıqların detallarını və nəticələrini bu
-                        yazıda tapa bilərsiniz.
-                    </p>
-                </article>
-
-
-                <!-- Oxşar xəbərlər -->
-                <aside class="similarNews">
-                    <div class="similarCard">
-                        <div class="similarCardLent">
-                            <h3>Xeber Lenti</h3>
+                </div>
+                <div class="singlePageGrid">
+                    <!-- Əsas Xəbər -->
+                    <article class="blogContent">
+                        <img src="https://bizim.media/file/articles/2025/04/15/1744717884_5472337206610881187-1.jpg"
+                            alt="Azərbaycan siyasəti ilə bağlı xəbər şəkli" />
+                        <h1 class="news-title">Azərbaycan-Ermənistan Sülh Danışıqları Yenidən Gündəmdə</h1>
+                        <div class="meta">
+                            <span class="category"><i class="fas fa-tag"></i> Siyasət</span>
+                            <span class="time"><i class="far fa-clock"></i> 20 Aprel 2025, 15:30</span>
+                            <span class="views"><i class="fas fa-eye"></i> 1,452 baxış</span>
                         </div>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Həbsdə olan menecer xəstəxanaya yerləşdirildi</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                    </div>
-                                </div>
+                        <p class="description">
+                            Bu, xəbər haqqında ətraflı təsvir hissəsidir. Burada xəbər məzmunu ətraflı şəkildə
+                            göstərilir.
+                            Azərbaycan ilə Ermənistan arasında baş tutan son danışıqların detallarını və nəticələrini bu
+                            yazıda tapa bilərsiniz.
+                        </p>
+                        <div class="aBlockWrap">
+                            <div class="aBlockTitle">
+                                <h2>Oxşar xəbərlər</h2>
+                                <!-- <div class="aAllShow">
+                                    <a href="Hamisini goster">Hamısını göstər</a>
+                                </div> -->
                             </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">"Mançester Siti" yayda portuqaliyalı qapıçını
-                                        transfer
-                                        edə bilər</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                            <div class="bigPost">
+                                <a href="#">
+                                    <div class="BigPostImage">
+                                        <img src="https://bizim.media/file/articles/2025/04/21/1745260036_5202085722474016735.jpg"
+                                            alt="" />
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                    <div class="BigPostInfo">
+                                        <h2 class="BigPostTitle">Bizim Title 1</h2>
+                                        <div class="BigPostExtra">
+                                            <div class="postCategory">Kateqoriya</div>
+                                            <div class="postDate">12:00</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                                </a>
 
-                    <div class="similarCardAnother">
-                        <div class="similarCardLent">
-                            <h3>Basliq 3</h3>
+                                <a href="#">
+                                    <div class="BigPostImage">
+                                        <img src="https://bizim.media/file/articles/2025/04/21/1745257250_5201758493210704244.jpg"
+                                            alt="" />
+                                    </div>
+                                    <div class="BigPostInfo">
+                                        <h2 class="BigPostTitle">Bizim Title 2</h2>
+                                        <div class="BigPostExtra">
+                                            <div class="postCategory">Kateqoriya</div>
+                                            <div class="postDate">13:00</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="BigPostImage">
+                                        <img src="https://bizim.media/file/articles/2025/04/21/1745250003_2025-q1-statistics-on-genres-00-full.jpg"
+                                            alt="" />
+                                    </div>
+                                    <div class="BigPostInfo">
+                                        <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                        <div class="BigPostExtra">
+                                            <div class="postCategory">Kateqoriya</div>
+                                            <div class="postDate">14:00</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="BigPostImage">
+                                        <img src="https://bizim.media/file/articles/2025/04/21/1745250003_2025-q1-statistics-on-genres-00-full.jpg"
+                                            alt="" />
+                                    </div>
+                                    <div class="BigPostInfo">
+                                        <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                        <div class="BigPostExtra">
+                                            <div class="postCategory">Kateqoriya</div>
+                                            <div class="postDate">14:00</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="BigPostImage">
+                                        <img src="https://bizim.media/file/articles/2025/04/21/1745250003_2025-q1-statistics-on-genres-00-full.jpg"
+                                            alt="" />
+                                    </div>
+                                    <div class="BigPostInfo">
+                                        <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                        <div class="BigPostExtra">
+                                            <div class="postCategory">Kateqoriya</div>
+                                            <div class="postDate">14:00</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-cardAnother">
-                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg" alt="#" />
-                                <div class="sidebar-contentAbother">
-                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya yerləşdirildi
-                                    </div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                    </article>
+
+
+
+                    <!-- Oxşar xəbərlər -->
+                    <aside class="similarNews">
+                        <div class="similarCard">
+                            <div class="similarCardLent">
+                                <h3>Xeber Lenti</h3>
+                            </div>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-card">
+                                    <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-title">Həbsdə olan menecer xəstəxanaya yerləşdirildi</div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-cardAnother">
-                                <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg" alt="#" />
-                                <div class="sidebar-contentAbother">
-                                    <div class="sidebar-titleAnother">"Mançester Siti" yayda portuqaliyalı qapıçını
-                                        transfer
-                                        edə bilər</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                            </a>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-card">
+                                    <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-title">"Mançester Siti" yayda portuqaliyalı qapıçını
+                                            transfer
+                                            edə bilər</div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-cardAnother">
-                                <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg" alt="#" />
-                                <div class="sidebar-contentAbother">
-                                    <div class="sidebar-titleAnother">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                            </a>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-card">
+                                    <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-title">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+
+                        <div class="similarCardAnother">
+                            <div class="similarCardLent">
+                                <h3>Basliq 3</h3>
                             </div>
-                        </a>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-cardAnother">
+                                    <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-contentAbother">
+                                        <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya yerləşdirildi
+                                        </div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-cardAnother">
+                                    <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-contentAbother">
+                                        <div class="sidebar-titleAnother">"Mançester Siti" yayda portuqaliyalı qapıçını
+                                            transfer
+                                            edə bilər</div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./singlePage.html" class="rightLink">
+                                <div class="sidebar-cardAnother">
+                                    <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg"
+                                        alt="#" />
+                                    <div class="sidebar-contentAbother">
+                                        <div class="sidebar-titleAnother">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
+                                        <div class="sidebar-meta">
+                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
+                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footerContainer">
+                    <!-- Logo və Links -->
+                    <div class="logoBase">
+                        <div class="logo">
+                            <span class="logoIcon">B</span> BİZİM.MEDIA
+                        </div>
+
+                        <div class="footerContainerOne">
+                            <div class="footerContainer">
+                                <ul class="footerTop" id="footerTabs">
+                                    <!-- Dinamik olaraq JavaScript ilə əlavə olunacaq -->
+                                    <li>▶️Haqqimizda</li>
+                                    <li>▶️data</li>
+                                </ul>
+                            </div>
+                            <ul class="footerBottom">
+                                <li>▶️Əlaqə:</li>
+                                <li>Telefon: 050-936-83-33</li>
+                                <li>Email: example.mail@gmail.com</li>
+                            </ul>
+                        </div>
                     </div>
 
-                </aside>
+                    <!-- Menyular -->
+                    <div class="footerColumn">
+                        <ul id="footerLinks">
+                            <li class="active">Ana sehive</li>
+                            <li class="">Siyaset</li>
+                            <li class="">Iqtisadiyyat</li>
+                            <li class="">Cemiyyet</li>
+                            <li class="">Medeniyyet</li>
+                            <li class="">Kirminal</li>
+                            <li class="">Dunya</li>
+                            <li class="">Idman</li>
+                            <li class="">SouTime</li>
+                            <li class="">Biznes</li>
+                            <!-- Dinamik olaraq JavaScript ilə əlavə olunacaq -->
+                        </ul>
+                    </div>
 
-            </div>
+                    <!-- Sosial və Creator -->
+                    <div class="footerColumn">
+                        <div class="followUs">Bizi izləyin</div>
+                        <div class="socialIcons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-telegram-plane"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="createdBy">Created by <span>: Tharlan Shiraliyev</span></div>
+                    </div>
+                </div>
+            </footer>
+        </header>
+
+        <div class="right">
+            Reklamınız üçün ideal<br />məkan!
         </div>
-    </header>
+    </div>
 </body>
 
 </html>

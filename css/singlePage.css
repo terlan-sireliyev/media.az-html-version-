@@ -1,16 +1,18 @@
-/* similarNewsbody {
+/* Reset və Box Sizing */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-} */
+    box-sizing: border-box;
+}
 
+/* Layout üçün Flex */
+body>div {
+    display: flex;
+    flex-direction: row;
+}
 
 .left,
 .right {
-    position: fixed;
-    top: 0;
-    bottom: 0;
     width: 170px;
     background-color: #5f00d0;
     color: white;
@@ -18,24 +20,24 @@
     padding: 20px 10px;
     font-size: 16px;
     font-weight: bold;
-    z-index: 100;
 }
 
-.left {
-    left: 0;
+.center {
+    max-width: 1100px;
+    flex: 1;
+    /* margin: 0 20px; */
 }
 
-.right {
-    right: 0;
-}
 
-/* Header */
+/* Ortadakı Məzmun Sahəsi */
 header {
     flex: 1;
     padding: 5px 4px;
     border-bottom: 2px solid #00b140;
     /* background: red; */
 }
+
+/* Header */
 
 .headerClasster {
     display: flex;
@@ -131,6 +133,7 @@ nav ul {
 nav ul li {
     font-weight: bold;
     cursor: pointer;
+    font-size: 18px;
 }
 
 nav ul li.active {
@@ -141,9 +144,9 @@ nav ul li.active {
 /* Layout Mərkəzləşdirmə */
 
 .layout {
-    margin-left: 170px;
-    margin-right: 170px;
-    padding: 0px 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px;
 }
 
 /* Xəbər strukturu */
@@ -218,7 +221,7 @@ nav ul li.active {
 .similarCard {
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); */
     /* padding: 0 20px; */
-    margin-top: -16px;
+    margin-top: 4px;
     margin-bottom: 20px;
     border-bottom: 1px solid#c4c4c4;
 
@@ -334,6 +337,320 @@ nav ul li.active {
     text-decoration-line: none;
     color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.regionContainer {
+    padding: 20px, 0px;
+    margin-bottom: 50px;
+}
+
+.aBlockWrap {
+    margin-top: 20px;
+}
+
+.bigPost {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.BigPostImage {
+    height: 150px;
+    overflow: hidden;
+}
+
+.BigPostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.bigPost a {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    text-decoration-line: none;
+}
+
+.aBlockTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.aAllShow a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.aAllShow a:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+
+
+.BigPostInfo {
+    margin-top: 10px;
+}
+
+.BigPostTitle {
+    font-size: 1.2rem;
+
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.BigPostExtra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 15px;
+}
+
+.postCategory {
+    color: #007bff;
+}
+
+.miniPost {
+    display: flex;
+}
+
+.miniPost li a {
+    display: flex;
+    gap: 4px;
+    text-decoration-line: none;
+    color: black;
+
+}
+
+.miniPost ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.miniPost li {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 19px;
+}
+
+
+.mPostImage {
+    width: 100px;
+    height: 70px;
+}
+
+.mPostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mPostInfo {
+    flex: 1;
+}
+
+.mPostTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mPostExtra {
+    font-size: 0.85rem;
+    color: gray;
+    margin-top: 30px;
+    float: right;
+}
+
+@media (max-width: 1520px) and (min-width: 1443px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1443px) and (min-width: 1343px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+        gap: 20px;
+
+    }
+
+    .BigPostImage {
+        height: 130px;
+    }
+}
+
+@media (max-width: 1343px) and (min-width: 1290px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
+        gap: 20px;
+    }
+
+    .BigPostImage {
+        height: 118px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1290px) and (min-width: 1140px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+        gap: 20px;
+    }
+
+    .BigPostImage {
+        height: 118px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1290px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1242px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+        gap: 20px;
+    }
+
+    .BigPostImage {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+        gap: 20px;
+    }
+
+    .BigPostImage {
+        height: 150px;
+    }
+}
+
+
+
+@media (max-width: 1042px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 3fr));
+        gap: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+    .BigPostImage {
+        height: 180px;
+    }
+
+    .aBlockWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .miniPost ul {
+        width: 100%;
+    }
+
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsivlik üçün */
 @media (max-width: 1290px) {

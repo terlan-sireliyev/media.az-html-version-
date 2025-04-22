@@ -1,0 +1,178 @@
+.footer {
+    background-color: #140202;
+    color: white;
+    padding: 60px 30px;
+    font-family: 'Georgia', serif;
+    margin-top: 20px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logoBase {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logoIcon {
+    background-color: white;
+    color: #cc2b24;
+    font-weight: bold;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 3;
+    column-gap: 40px;
+}
+
+.footerColumn ul li {
+    margin-bottom: 6px;
+}
+
+.footerColumn ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.footerColumn ul li a:hover {
+    opacity: 0.7;
+}
+
+.followUs {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 14px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.socialIcons i {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socialIcons i:hover {
+    transform: scale(1.2);
+}
+
+.createdBy {
+    font-size: 14px;
+}
+
+.createdBy span {
+    font-weight: bold;
+    color: #ffc94a;
+}
+
+.footerTop {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footerBottom {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.active {
+    color: #00cc00;
+    border-bottom: 2px solid #00cc00;
+}
+
+@media (max-width: 860px) {
+    .footerContainer {
+        justify-content: center;
+    }
+
+    .footerColumn ul {
+        columns: 4;
+    }
+
+    .footerColumn {
+        align-items: center;
+    }
+
+    .footerTop {
+        margin-left: 0px;
+    }
+
+    .logoBase {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .footerColumn ul {
+        columns: 2;
+        column-gap: 80px !important;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .createdBy {
+        margin-top: 10px;
+    }
+
+    .footerTop {
+        margin-left: 0;
+    }
+
+    .footerBottom {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

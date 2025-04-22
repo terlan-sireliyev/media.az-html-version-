@@ -2,19 +2,22 @@ import { data } from '../data/blogNews.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navUl = document.querySelector('nav ul');
+    // const navUl = document.querySelector('nav ul');
 
-    // Unikal kateqoriyaları əldə edirik
-    const categories = ['all', ...new Set(data.map(item => item.category))];
+    // // Unikal kateqoriyaları əldə edirik
+    // const categories = ['all', ...new Set(data.map(item => item.category))];
 
-    // Hər kateqoriya üçün bir <li> elementi yaradırıq
-    categories.forEach(category => {
-        const li = document.createElement('li');
-        li.id = category;
-        li.textContent = category === 'all' ? 'Hamısı' : capitalize(category);
-        if (category === 'all') li.classList.add('active'); // default olaraq "Hamısı" aktiv olsun
-        navUl.appendChild(li);
-    });
+    // // Hər kateqoriya üçün bir <li> elementi yaradırıq
+    // categories.forEach(category => {
+    //     const li = document.createElement('li');
+    //     li.id = category;
+    //     li.textContent = category === 'all' ? 'Hamısı' : capitalize(category);
+    //     if (category === 'all') li.classList.add('active'); // default olaraq "Hamısı" aktiv olsun
+    //     // navUl.appendChild(li);
+    //     const firstChild = navUl.firstChild;  // Əgər valideyndə uşaq varsa
+
+    //     navUl.insertBefore(li, firstChild);
+    // });
 
     // İlk olaraq "Hamısı" kateqoriyasını avtomatik göstəririk
     displayNews('all');
@@ -103,3 +106,111 @@ function displayNews(category) {
 // }
 
 // displayData(data);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function updateDropdown() {
+    const screenWidth = window.innerWidth;
+    const dropdown = document.getElementById('dropdown');
+    const navUl = document.querySelector('nav ul');
+    const items = Array.from(navUl.children);
+
+    let itemsToMove = 0;
+
+    if (screenWidth < 650) {
+        itemsToMove = 5;
+    }
+    else if (screenWidth < 750) {
+        itemsToMove = 8;
+    }
+    else if (screenWidth < 880) {
+        itemsToMove = 4;
+    }
+    else if (screenWidth < 1070) {
+        itemsToMove = 2;
+    } else if (screenWidth < 1250) {
+        itemsToMove = 1;
+    }
+
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownItems = Array.from(dropdownMenu.children);
+
+    dropdownItems.forEach(dropItem => {
+        navUl.insertBefore(dropItem, dropdown);
+    });
+
+    if (dropdownMenu.children.length === 0) {
+        dropdown.style.display = "none";
+    }
+
+    const updatedItems = Array.from(navUl.children).filter(li => !li.classList.contains('dropdown'));
+
+    for (let i = 0; i < itemsToMove; i++) {
+        const itemToMove = updatedItems[updatedItems.length - 1 - i];
+        if (itemToMove) {
+            dropdownMenu.insertBefore(itemToMove, dropdownMenu.firstChild);
+        }
+    }
+
+    if (itemsToMove > 0) {
+        dropdown.style.display = "block";
+    }
+}
+
+
+updateDropdown();
+
+window.addEventListener('resize', updateDropdown);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const slides = document.querySelectorAll('.imgCard');
+const prevBtn = document.querySelector('.prevBtn');
+const nextBtn = document.querySelector('.nextBtn');
+let currentIndex = 0;
+let autoSlide;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+function startAutoSlide() {
+    autoSlide = setInterval(nextSlide, 5000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlide);
+}
+
+// Event listeners
+nextBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+});
+
+// Start slider
+showSlide(currentIndex);
+startAutoSlide();
