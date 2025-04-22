@@ -15,12 +15,27 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/singlePage.css" />
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/singlePage.css" /> -->
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
 
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <!-- <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hamburgerMenu.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link rel="stylesheet" href="css/singlePage.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="script/HamburgerMenu.js"></script>
     <script type="module" src="script/script.js"></script>
 </head>
 
@@ -31,48 +46,65 @@
         </div>
 
         <header>
-            <div class="layout">
-                <div class="headerClasster">
-                    <div class="logo"><a href="/index.html">
-                            <span>BİZİM</span>.MEDIA
-                        </a></div>
-                    <div class="socialIconsBase">
-                        <div class="social-icons">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-telegram"></i>
-                            <i class="fab fa-youtube"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="hamburgerIcon">
+            <div class="headerClasster">
+                <div class="logoNavbar"><a href="/index.html">
+                        <span>BİZİM</span>.MEDIA
+                    </a></div>
+                <div class="socialIconsBase">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="hamburgerWrapper">
+                        <div class="hamburgerIcon" id="hamburgerBtn">
                             <i class="fa-solid fa-bars"></i>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="navbar-wrapper">
-                        <nav>
-                            <ul id="navList">
-                                <li class="active">Ana sehive</li>
-                                <li class="">Siyaset</li>
-                                <li class="">Iqtisadiyyat</li>
-                                <li class="">Cemiyyet</li>
-                                <li class="">Medeniyyet</li>
-                                <li class="">Kirminal</li>
-                                <li class="">Dunya</li>
-                                <li class="">Idman</li>
-                                <li class="">SouTime</li>
-                                <li class="">Biznes</li>
-                                <!-- Categories will be added dynamically -->
-                                <li class="dropdown" id="dropdown">
-                                    Digərləri ▾
-                                    <ul class="dropdown-menu" id="dropdownMenu">
-                                    </ul>
-                                </li>
+                        <nav class="mobileMenu" id="mobileMenu">
+                            <ul class="hamburgerUl">
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📰 Siyasət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">💰 İqtisadiyyat</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🏛️ Cəmiyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎭 Mədəniyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🚨 Kriminal</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎤 Şou-TIME</a></li>
+
+                                <li class="hamburgerDivider"></li> <!-- Ayrıcı -->
+
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">ℹ️ Haqqımızda</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📧 Əlaqə</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🧾 About</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
+            </div>
+            <div class="navbar-wrapper">
+                <nav class="navbarNav">
+                    <ul id="navList" class="navList">
+                        <li class="navList-item active">Ana sehive</li>
+                        <li class="navList-item ">Siyaset</li>
+                        <li class="navList-item ">Iqtisadiyyat</li>
+                        <li class="navList-item ">Cemiyyet</li>
+                        <li class="navList-item ">Medeniyyet</li>
+                        <li class="navList-item ">Kirminal</li>
+                        <li class="navList-item ">Dunya</li>
+                        <li class="navList-item ">Idman</li>
+                        <li class="navList-item ">SouTime</li>
+                        <li class="navList-item ">Biznes</li>
+                        <!-- Categories will be added dynamically -->
+                        <li class="dropdown" id="dropdown">
+                            Digərləri ▾
+                            <ul class="dropdown-menu" id="dropdownMenu">
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="layout">
+
                 <div class="singlePageGrid">
                     <!-- Əsas Xəbər -->
                     <article class="blogContent">
@@ -299,17 +331,17 @@
 
                     <!-- Menyular -->
                     <div class="footerColumn">
-                        <ul id="footerLinks">
-                            <li class="active">Ana sehive</li>
-                            <li class="">Siyaset</li>
-                            <li class="">Iqtisadiyyat</li>
-                            <li class="">Cemiyyet</li>
-                            <li class="">Medeniyyet</li>
-                            <li class="">Kirminal</li>
-                            <li class="">Dunya</li>
-                            <li class="">Idman</li>
-                            <li class="">SouTime</li>
-                            <li class="">Biznes</li>
+                        <ul id="footerUl">
+                            <li class="footerListItem active">Ana sehive</li>
+                            <li class="footerListItem">Siyaset</li>
+                            <li class="footerListItem">Iqtisadiyyat</li>
+                            <li class="footerListItem">Cemiyyet</li>
+                            <li class="footerListItem">Medeniyyet</li>
+                            <li class="footerListItem">Kirminal</li>
+                            <li class="footerListItem">Dunya</li>
+                            <li class="footerListItem">Idman</li>
+                            <li class="footerListItem">SouTime</li>
+                            <li class="footerListItem">Biznes</li>
                             <!-- Dinamik olaraq JavaScript ilə əlavə olunacaq -->
                         </ul>
                     </div>

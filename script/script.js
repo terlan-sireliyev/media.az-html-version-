@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     displayNews('all');
 
     // Hər bir navbar item-ə klik hadisəsi əlavə edirik
-    document.querySelectorAll('nav ul li').forEach(item => {
+    document.querySelectorAll('.navList-item').forEach(item => {
         item.addEventListener('click', (e) => {
             const category = e.target.id;
-            document.querySelectorAll('nav ul li').forEach(li => li.classList.remove('active'));
+            document.querySelectorAll('.navList-item').forEach(li => li.classList.remove('active'));
             e.target.classList.add('active');
             displayNews(category);
         });
@@ -113,7 +113,7 @@ function displayNews(category) {
 function updateDropdown() {
     const screenWidth = window.innerWidth;
     const dropdown = document.getElementById('dropdown');
-    const navUl = document.querySelector('nav ul');
+    const navUl = document.querySelector('#navList');
     const items = Array.from(navUl.children);
 
     let itemsToMove = 0;

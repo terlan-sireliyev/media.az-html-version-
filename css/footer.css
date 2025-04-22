@@ -44,7 +44,7 @@
     flex-direction: column;
 }
 
-.footerColumn ul {
+.footerUl {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -52,20 +52,25 @@
     column-gap: 40px;
 }
 
-.footerColumn ul li {
+.footerListItem {
     margin-bottom: 6px;
-}
-
-.footerColumn ul li a {
     text-decoration: none;
+    list-style-type: none;
     color: white;
     font-size: 15px;
     transition: opacity 0.3s ease;
 }
 
-.footerColumn ul li a:hover {
+/* .footerColumn ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+} */
+
+/* .footerListItem a:hover {
     opacity: 0.7;
-}
+} */
 
 .followUs {
     font-weight: 600;
