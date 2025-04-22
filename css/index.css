@@ -748,6 +748,35 @@ nav {
 
 
 
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 bərabər sütun */
+    gap: 20px;
+    max-width: 1000px;
+    /* Maksimum eni təyin edirik */
+    margin: 0 auto;
+    /* Ortaya yerləşdiririk */
+    padding: 20px 0px;
+}
+
+.news-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-card p {
+    margin: 0;
+    font-size: 14px;
+}
 
 
 
@@ -785,6 +814,26 @@ nav {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .left,
+    .right {
+        width: 120px;
+    }
+
+    .center {
+        margin: 0 0px;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .navList {
+        gap: 15px;
+    }
+}
 
 
 @media (max-width: 1000px) and (min-width: 930px) {
@@ -864,26 +913,6 @@ nav {
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    .left,
-    .right {
-        width: 120px;
-    }
-
-    .center {
-        margin: 0 0px;
-    }
-
-    .news-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .navList {
-        gap: 15px;
-    }
-}
 
 @media (max-width: 768px) {
     body>div {
@@ -925,8 +954,9 @@ nav {
     }
 
     .news-cards {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
@@ -949,11 +979,12 @@ nav {
 
 }
 
-@media (max-width:555px) {
+@media (max-width:540px) {
     .news-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* max-width: 956px; */
     }
 
     .imgCard {
@@ -963,36 +994,4 @@ nav {
     .sliderBase {
         height: 370px;
     }
-}
-
-
-
-.news-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 3 bərabər sütun */
-    gap: 20px;
-    max-width: 1000px;
-    /* Maksimum eni təyin edirik */
-    margin: 0 auto;
-    /* Ortaya yerləşdiririk */
-    padding: 20px 0px;
-}
-
-.news-card h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-    display: -webkit-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.news-card p {
-    margin: 0;
-    font-size: 14px;
 }
