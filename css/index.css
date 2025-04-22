@@ -90,7 +90,11 @@ header {
     font-weight: bold;
 }
 
-.logo span {
+.logo a {
+    text-decoration-line: none;
+}
+
+.logo a span {
     color: #00b140;
 }
 
@@ -111,7 +115,8 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #00b140;
+    border-bottom: 1px solid #00b140;
+    border-top: 1px solid #00b140;
     /* background-color: red; */
 }
 
@@ -124,6 +129,7 @@ nav ul {
     justify-content: space-between;
     /* background-color: gold; */
     width: 100%;
+    margin-bottom: 0;
 }
 
 nav ul li {
@@ -230,23 +236,40 @@ nav ul li.active {
 /* Sidebar Cards */
 .right-sidebar {
     margin-top: 20px;
+
+}
+
+/* .homeBlogCard {
+    border: 1px solid red;
+} */
+
+.homeBlogCard:not(:first-child) {
+    margin-top: 40px;
+}
+
+
+.homeRightSideHeader {
+    background: #c4c4c48f;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
 }
 
 .right-sidebar h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .sidebar-card {
-    display: flex;
-    display: flex;
     gap: 10px;
     margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .sidebar-card img {
-    width: 80px;
-    height: 60px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 4px;
 }
@@ -254,7 +277,9 @@ nav ul li.active {
 .sidebar-content {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .sidebar-title {
@@ -278,6 +303,266 @@ nav ul li.active {
     text-decoration-line: none;
     color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.regionContainer {
+    padding: 20px, 0px;
+    margin-bottom: 50px;
+}
+
+.aBlockWrap {
+    /* display: flex; */
+    /* gap: 20px; */
+}
+
+.bigPost {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.BigPostImage {
+    height: 150px;
+    overflow: hidden;
+}
+
+.BigPostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.bigPost a {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    text-decoration-line: none;
+}
+
+.aBlockTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.aAllShow a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.aAllShow a:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+
+
+.BigPostInfo {
+    margin-top: 10px;
+}
+
+.BigPostTitle {
+    font-size: 1.2rem;
+
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.BigPostExtra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 15px;
+}
+
+.postCategory {
+    color: #007bff;
+}
+
+.miniPost {
+    display: flex;
+}
+
+.miniPost li a {
+    display: flex;
+    gap: 4px;
+    text-decoration-line: none;
+    color: black;
+
+}
+
+.miniPost ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.miniPost li {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 19px;
+}
+
+
+.mPostImage {
+    width: 100px;
+    height: 70px;
+}
+
+.mPostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mPostInfo {
+    flex: 1;
+}
+
+.mPostTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mPostExtra {
+    font-size: 0.85rem;
+    color: gray;
+    margin-top: 30px;
+    float: right;
+}
+
+@media (max-width: 1520px) and (min-width: 1360px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1360px) and (min-width: 1310px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1313px) and (min-width: 1290px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
+        gap: 20px;
+    }
+}
+
+/* @media (max-width: 1167px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+        gap: 20px;
+    }
+} */
+
+
+
+/* @media (max-width: 775px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
+        gap: 20px;
+    }
+} */
+
+
+
+
+@media (max-width: 768px) {
+    .BigPostImage {
+        height: 180px;
+    }
+
+    .aBlockWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .miniPost ul {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===================== RESPONSIVE ===================== */
@@ -384,9 +669,6 @@ nav ul li.active {
     }
 }
 
-
-
-
 @media (max-width: 768px) {
     body>div {
         flex-direction: column;
@@ -459,6 +741,17 @@ nav ul li.active {
     nav ul li:nth-last-child(3) {
         display: none;
 
+    }
+}
+
+@media (max-width:650px) {
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 0px; */
     }
 }
 

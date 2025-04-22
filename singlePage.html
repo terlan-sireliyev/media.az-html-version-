@@ -19,6 +19,7 @@
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script type="module" src="script/script.js"></script>
 </head>
 
 <body>
@@ -32,6 +33,30 @@
 
     <header>
         <div class="layout">
+            <div class="headerClasster">
+                <div class="logo"><a href="/index.html">
+                        <span>BİZİM</span>.MEDIA
+                    </a></div>
+                <div class="socialIconsBase">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="hamburgerIcon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+            </div>
             <div class="singlePageGrid">
                 <!-- Əsas Xəbər -->
                 <article class="blogContent">
@@ -54,8 +79,8 @@
                 <!-- Oxşar xəbərlər -->
                 <aside class="similarNews">
                     <div class="similarCard">
-                        <div>
-                            <h3>Basliq 1</h3>
+                        <div class="similarCardLent">
+                            <h3>Xeber Lenti</h3>
                         </div>
                         <a href="./singlePage.html" class="rightLink">
                             <div class="sidebar-card">
@@ -96,58 +121,17 @@
                             </div>
                         </a>
                     </div>
-                    <div class="similarCard">
-                        <div>
-                            <h3>Basliq 2</h3>
-                        </div>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Həbsdə olan menecer xəstəxanaya yerləşdirildi</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">"Mançester Siti" yayda portuqaliyalı qapıçını
-                                        transfer
-                                        edə bilər</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
-                                <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
-                                    <div class="sidebar-meta">
-                                        <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="similarCard">
-                        <div>
+
+                    <div class="similarCardAnother">
+                        <div class="similarCardLent">
                             <h3>Basliq 3</h3>
                         </div>
                         <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
+                            <div class="sidebar-cardAnother">
                                 <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Həbsdə olan menecer xəstəxanaya yerləşdirildi</div>
+                                <div class="sidebar-contentAbother">
+                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya yerləşdirildi
+                                    </div>
                                     <div class="sidebar-meta">
                                         <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
                                         <span class="time"><i class="fas fa-clock"></i> 12:30</span>
@@ -156,10 +140,10 @@
                             </div>
                         </a>
                         <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
+                            <div class="sidebar-cardAnother">
                                 <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">"Mançester Siti" yayda portuqaliyalı qapıçını
+                                <div class="sidebar-contentAbother">
+                                    <div class="sidebar-titleAnother">"Mançester Siti" yayda portuqaliyalı qapıçını
                                         transfer
                                         edə bilər</div>
                                     <div class="sidebar-meta">
@@ -170,10 +154,10 @@
                             </div>
                         </a>
                         <a href="./singlePage.html" class="rightLink">
-                            <div class="sidebar-card">
+                            <div class="sidebar-cardAnother">
                                 <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg" alt="#" />
-                                <div class="sidebar-content">
-                                    <div class="sidebar-title">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
+                                <div class="sidebar-contentAbother">
+                                    <div class="sidebar-titleAnother">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
                                     <div class="sidebar-meta">
                                         <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
                                         <span class="time"><i class="fas fa-clock"></i> 12:30</span>
