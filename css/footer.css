@@ -146,7 +146,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 792px) {
     .footerContainer {
         flex-direction: column;
         align-items: center;
