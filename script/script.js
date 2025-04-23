@@ -63,10 +63,8 @@ function displayNews(category) {
         <a href="./singlePage.html" class="cardLink">
             <div class="card">
                 <img src="${item.img}" alt="${item.title}"/>
-                <div class="card-content">
-                <h3>${item.title}</h3>
-                <div class="category">${item.category} | ${item.time}</div>
-                </div>
+                  <h3>${item.title}</h3>
+                <div class="centerCardCategory">${item.category} | ${item.time}</div>
             </div>
         </a>
         `;

@@ -304,9 +304,10 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
-    min-height: 350px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card:hover {
@@ -319,37 +320,40 @@ nav {
     object-fit: cover;
 }
 
-.card-content {
+/* .card-content {
     padding: 10px 0px;
     position: relative;
     height: 170px;
-    /* background: green; */
-}
+} */
 
-.card-content h3 {
+.card h3 {
     font-family: 'Georgia';
     font-size: 20px;
     color: #111;
     margin-top: 4px;
     line-height: 1.5;
     padding: 0 12px;
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: box;
     -webkit-box-orient: vertical;
     box-orient: vertical;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
+    margin-bottom: 35px;
+    /* background-color: red; */
 }
 
-.card-content .category {
+.centerCardCategory {
     font-size: 14px;
     color: #00b140;
+
     position: absolute;
     bottom: 5px;
     left: 10px;
 }
+
 
 .cardLink {
     text-decoration-line: none;
@@ -806,11 +810,11 @@ nav {
 
 
 
-.news-card h3 {
+/* .news-card h3 {
     margin: 0 0 10px;
     font-size: 20px;
 
-}
+} */
 
 .news-card p {
     margin: 0;
@@ -883,8 +887,8 @@ nav {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
         cursor: pointer;
-        height: 220px;
-        min-height: 303px;
+        height: auto;
+        min-height: 100%;
     }
 
     .card img {
@@ -1037,7 +1041,7 @@ nav {
 
 @media (max-width:400px) {
     .card {
-        min-height: 293px;
+        min-height: 100%;
     }
 
     .news-cards {
