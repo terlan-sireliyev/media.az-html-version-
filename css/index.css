@@ -1036,6 +1036,10 @@ nav {
 }
 
 @media (max-width:400px) {
+    .card {
+        min-height: 293px;
+    }
+
     .news-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
