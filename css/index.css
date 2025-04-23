@@ -351,7 +351,7 @@ nav {
 
     position: absolute;
     bottom: 5px;
-    left: 10px;
+    left: 13px;
 }
 
 
@@ -741,7 +741,7 @@ nav {
 .prevBtn,
 .nextBtn {
     position: absolute;
-    top: 50%;
+    top: 44%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -1037,6 +1037,13 @@ nav {
     .sliderBase {
         height: 370px;
     }
+
+    .prevBtn,
+    .nextBtn {
+        position: absolute;
+        top: 40%;
+
+    }
 }
 
 @media (max-width:400px) {
@@ -1059,9 +1066,11 @@ nav {
     .sidebar-title {
         font-size: 15px;
     }
+
+
 }
 
-@media (max-width:400px) {
+@media (max-width:357px) {
     .sidebar-meta {
         font-size: 13px;
     }
