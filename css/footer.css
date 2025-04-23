@@ -119,10 +119,10 @@
     color: white;
 }
 
-.active {
+/* .active {
     color: #00cc00;
     border-bottom: 2px solid #00cc00;
-}
+} */
 
 @media (max-width: 860px) {
     .footerContainer {
@@ -145,6 +145,26 @@
         text-align: center;
     }
 }
+
+@media (max-width:820px) {
+    .navbarNav {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .navSeacrBaseDiv {
+        display: block
+    }
+
+    .sliderBase {
+        margin-top: 0px;
+    }
+
+}
+
 
 @media (max-width: 792px) {
     .footerContainer {

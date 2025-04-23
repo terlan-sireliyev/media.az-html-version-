@@ -32,7 +32,7 @@ body>div {
 /* Ortadakı Məzmun Sahəsi */
 header {
     flex: 1;
-    padding: 5px 4px;
+    padding: 5px 20px;
     border-bottom: 2px solid #00b140;
     /* background: red; */
 }
@@ -91,11 +91,13 @@ header {
 
 .logoNavbar a {
     text-decoration-line: none;
+    color: #000;
 }
 
 .logoNavbar a span {
     color: #00b140;
 }
+
 
 /* Sosial ikonlar */
 .social-icons {
@@ -261,6 +263,7 @@ header {
     font-size: 28px;
     margin-bottom: 12px;
     color: #222;
+    word-break: break-all;
 }
 
 .meta {
@@ -286,7 +289,7 @@ header {
 
 .meta .views i {
     margin-right: 5px;
-    color: #f39c12;
+    color: #0077cc;
     /* Göz ikonasına fərqli rəng vermək istəsən */
 }
 
@@ -295,6 +298,7 @@ header {
     font-size: 16px;
     line-height: 1.7;
     color: #444;
+    word-break: break-all;
 }
 
 /* Oxşar xəbərlər */
@@ -353,7 +357,7 @@ header {
 }
 
 .sidebar-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     display: -webkit-box;
     display: box;
@@ -363,6 +367,7 @@ header {
     line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-break: break-all;
 }
 
 .sidebar-meta {
@@ -404,7 +409,8 @@ header {
 }
 
 .sidebar-titleAnother {
-    font-size: 14px;
+    word-break: break-all;
+    font-size: 18px;
     font-weight: bold;
     display: -webkit-box;
     display: box;

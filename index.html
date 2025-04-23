@@ -13,8 +13,10 @@
 
     <title>Bizim Media</title>
     <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="script/HamburgerMenu.js"></script>
     <script type="module" src="script/NavbarSearch.js"></script>
+    <script type="module" src="script/slider.js"></script>
     <script type="module" src="script/script.js"></script>
 
 </head>
@@ -38,7 +41,7 @@
         <header>
             <div class="headerClasster">
                 <div class="logoNavbar"><a href="/index.html">
-                        <span>BİZİM</span>.MEDIA
+                        <span>B</span>İZİM.MEDIA
                     </a></div>
                 <div class="socialIconsBase">
                     <div class="social-icons">
@@ -53,26 +56,27 @@
                     </div>
 
                     <div class="hamburgerWrapper">
-
                         <div class="hamburgerIcon" id="hamburgerBtn">
-                            <!-- <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i> -->
                             <i class="fa-solid fa-bars"></i>
                         </div>
                         <input type="text" id="searchInput" placeholder="Axtar..." style="display: none;" />
                         <nav class="mobileMenu" id="mobileMenu">
+                            <div class="hamburgerClose">
+                                <i class="fa-solid fa-xmark" id="hamburgerClose"></i>
+                            </div>
                             <ul class="hamburgerUl">
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📰 Siyasət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">💰 İqtisadiyyat</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🏛️ Cəmiyyət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎭 Mədəniyyət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🚨 Kriminal</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎤 Şou-TIME</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Siyasət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">İqtisadiyyat</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Cəmiyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Mədəniyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Kriminal</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Şou-TIME</a></li>
 
                                 <li class="hamburgerDivider"></li> <!-- Ayrıcı -->
 
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">ℹ️ Haqqımızda</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📧 Əlaqə</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🧾 About</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Haqqımızda</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Əlaqə</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">About</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -81,7 +85,7 @@
             <div class="navbar-wrapper">
                 <nav class="navbarNav">
                     <ul id="navList" class="navList">
-                        <li class="navList-item active">Ana sehive</li>
+                        <!-- <li class="navList-item active">Ana sehive</li> -->
                         <li class="navList-item ">Siyaset</li>
                         <li class="navList-item ">Iqtisadiyyat</li>
                         <li class="navList-item ">Cemiyyet</li>
@@ -89,12 +93,14 @@
                         <li class="navList-item ">Kirminal</li>
                         <li class="navList-item ">Dunya</li>
                         <li class="navList-item ">Idman</li>
-                        <li class="navList-item ">SouTime</li>
-                        <li class="navList-item ">Biznes</li>
+                        <!-- <li class="navList-item ">SouTime</li> -->
+                        <!-- <li class="navList-item ">Biznes</li> -->
                         <!-- Categories will be added dynamically -->
                         <li class="dropdown" id="dropdown">
                             Digərləri ▾
                             <ul class="dropdown-menu" id="dropdownMenu">
+                                <li>SouTime</li>
+                                <li>Biznes</li>
                             </ul>
                         </li>
                     </ul>
@@ -111,24 +117,17 @@
 
                             <!-- Xəbər məlumatları -->
                             <div class="newsInfo">
-                                <h3 class="newsTitle">Xəbərin Adı</h3>
-                                <div class="newsMeta">
-                                    <span class="newsCategory">Kateqoriya: Texnologiya</span> |
-                                    <span class="newsTime">Saat: 12:45</span>
-                                </div>
-                                <!-- <p class="newsDesc">Bu bir test xəbər təsviridir. Burada qısa açıqlama yazılır.</p> -->
+                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                    məzmunla zənginləşir”...</h3>
                             </div>
+
                         </div>
 
                         <div class="imgCard">
                             <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
                             <div class="newsInfo">
-                                <h3 class="newsTitle">Başlıq 2</h3>
-                                <div class="newsMeta">
-                                    <span class="newsCategory">İdman</span> |
-                                    <span class="newsTime">Saat: 14:00</span>
-                                </div>
-                                <!-- <p class="newsDesc">Bu bir başqa xəbər təsviridir.</p> -->
+                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                    məzmunla zənginləşir”...</h3>
                             </div>
                         </div>
 
@@ -136,19 +135,17 @@
                             <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
                                 alt="">
                             <div class="newsInfo">
-                                <h3 class="newsTitle">Başlıq 3</h3>
-                                <div class="newsMeta">
-                                    <span class="newsCategory">Əyləncə</span> |
-                                    <span class="newsTime">Saat: 16:30</span>
-                                </div>
-                                <!-- <p class="newsDesc">Əyləncəli bir xəbər haqqında qısa məlumat.</p> -->
+                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                    məzmunla zənginləşir”...</h3>
                             </div>
                         </div>
 
                         <!-- Prev / Next düymələri -->
                         <button class="prevBtn">❮</button>
                         <button class="nextBtn">❯</button>
+
                     </div>
+                    <div class="slider-pagination"></div>
 
 
 

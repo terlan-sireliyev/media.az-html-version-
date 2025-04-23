@@ -1,3 +1,16 @@
+.hamburgerIcon {
+    display: flex;
+    gap: 15px;
+    margin-right: 3px;
+}
+
+.hamburgerIcon i {
+    /* background: green; */
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+
 .mobileMenu {
     position: fixed;
     top: 0px;
@@ -45,6 +58,82 @@
 
 .hamburgerDivider {
     height: 2px;
-    background-color: green;
+    /* background-color: green; */
     /* margin: 15px 0; */
+}
+
+#searchInput {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 35px;
+    top: 3px;
+    width: 800px;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+.hamburgerClose {
+    padding: 10px;
+    text-align: right;
+}
+
+.hamburgerClose i {
+    font-size: 25px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+    #searchInput {
+        width: 700px;
+    }
+}
+
+@media (max-width: 930px) {
+    #searchInput {
+        width: 600px;
+    }
+}
+
+@media (max-width:820px) {
+    .hamburgerIcon i {
+        padding: 0px;
+        margin-top: -3px;
+        margin-right: 0px;
+        display: block;
+    }
+
+
+    #searchInput {
+        width: 500px;
+        position: absolute;
+        top: -5px;
+        right: 50px
+    }
+}
+
+@media (max-width: 768px) {
+    #searchInput {
+        width: 350px;
+    }
+}
+
+@media (max-width:650px) {
+    #searchInput {
+        width: 250px;
+    }
+
+}
+
+@media (max-width:357px) {
+    #searchInput {
+        width: 280px;
+    }
 }

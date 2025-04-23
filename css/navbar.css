@@ -1,0 +1,73 @@
+/* Naviqasiya */
+.navbarNav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #00b140;
+    border-top: 1px solid #00b140;
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.navList-item {
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: 'Georgia' 'Segoe UI', Tahoma
+}
+
+
+
+.navList-itemi.active {
+    color: #00b140;
+    border-bottom: 2px solid #00b140;
+}
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    /* display: none; */
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px;
+    z-index: 999;
+    min-width: 100px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}

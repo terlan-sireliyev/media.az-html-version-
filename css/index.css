@@ -37,7 +37,7 @@ body>div {
 /* Header */
 header {
     flex: 1;
-    padding: 5px 4px;
+    padding: 5px 20px;
     border-bottom: 2px solid #00b140;
     position: relative;
     /* background: red; */
@@ -84,47 +84,11 @@ header {
     /* background: gold; */
 }
 
-#searchInput {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 10px;
-    transition: all 0.3s ease;
-    position: absolute;
-    right: 35px;
-    top: 3px;
-    width: 800px;
-}
-
-#searchInput:focus {
-    outline: none;
-}
 
 
-.hamburgerIcon {
-    display: flex;
-    gap: 15px;
-    margin-right: 3px;
-}
 
-.hamburgerIcon i {
-    /* background: green; */
-    padding: 10px;
-    font-size: 20px;
-    display: none;
 
-}
 
-/* 
-#searchInput {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 10px;
-    transition: all 0.3s ease;
-} */
 
 /* Logo */
 .logoNavbar {
@@ -135,6 +99,7 @@ header {
 
 .logoNavbar a {
     text-decoration-line: none;
+    color: #000;
 }
 
 .logoNavbar a span {
@@ -154,112 +119,47 @@ header {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Naviqasiya */
-nav {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #00b140;
-    border-top: 1px solid #00b140;
-    /* overflow: hidden; */
-    width: 100%;
-}
-
-.navList {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 10px 0;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
+.inputAndClose {
     position: relative;
 }
 
-.navList-item {
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
-    font-size: 18px;
-    font-family: 'Georgia' 'Segoe UI', Tahoma
-}
 
-.navList-itemi.active {
-    color: #00b140;
-    border-bottom: 2px solid #00b140;
-}
 
-/* Dropdown styles */
-.dropdown {
-    position: relative;
-    display: none;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
-    font-size: 18px;
-}
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #fff;
-    border: 1px solid #ccc;
-    list-style: none;
-    padding: 10px;
-    z-index: 999;
-    min-width: 100px;
-}
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
-.dropdown-menu li {
-    padding: 5px;
-    cursor: pointer;
-}
 
-.dropdown-menu li:hover {
-    background-color: #f0f0f0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -340,7 +240,6 @@ nav {
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -349,6 +248,8 @@ nav {
     display: flex;
     flex-direction: column;
     position: relative;
+    border-bottom: 5px solid #00bcd4;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -368,6 +269,7 @@ nav {
 } */
 
 .card h3 {
+    word-break: break-all;
     font-family: 'Georgia';
     font-size: 20px;
     color: #111;
@@ -387,8 +289,9 @@ nav {
 }
 
 .centerCardCategory {
-    font-size: 14px;
-    color: #00b140;
+    background-color: transparent;
+    color: #00bcd4;
+    font-weight: 700;
 
     position: absolute;
     bottom: 5px;
@@ -465,6 +368,7 @@ nav {
 .sidebar-title {
     font-size: 22px;
     font-weight: bold;
+    word-break: break-all;
 }
 
 .sidebar-meta {
@@ -739,136 +643,27 @@ nav {
 
 
 
-.sliderBase {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    margin-top: 21px;
-    border-radius: 2px;
-    /* background-color: red; */
-    height: 477px;
-    /* max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px; */
-    /* position: absolute; */
-    border-bottom: 10px solid green;
-    padding-bottom: 5px;
 
-}
 
-.imgCard {
-    position: absolute;
 
-    width: 100%;
-    height: 400px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
-.imgCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 2px;
-}
 
-.imgCard.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-.prevBtn,
-.nextBtn {
-    position: absolute;
-    top: 44%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 2;
-    transition: background 0.3s;
-}
-
-.prevBtn:hover,
-.nextBtn:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prevBtn {
-    left: 10px;
-}
-
-.nextBtn {
-    right: 10px;
-}
-
-.newsInfo {
-    padding-top: 10px;
-    background: white;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.newsTitle {
-    font-size: 26px;
-    font-weight: bold;
-    margin: 5px 0;
-    border-bottom: border 2px solid green;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.newsMeta {
-    font-size: 17px;
-    color: gray;
-    margin-bottom: 8px;
-}
-
-.newsDesc {
-    font-size: 15px;
-    line-height: 1.4;
-}
 
 
 
 .news-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 bərabər sütun */
     gap: 20px;
     max-width: 1000px;
-    /* Maksimum eni təyin edirik */
     margin: 0 auto;
-    /* Ortaya yerləşdiririk */
     padding: 20px 0px;
 }
-
-
-
-/* .news-card h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-
-} */
 
 .news-card p {
     margin: 0;
     font-size: 14px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -898,6 +693,13 @@ nav {
     }
 }
 
+@media (max-width: 1130px) {
+    .navList {
+        /* background-color: red; */
+        gap: 25px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .left,
@@ -915,15 +717,11 @@ nav {
     }
 
     .navList {
-        gap: 15px;
+        gap: 25px;
     }
 }
 
-@media (max-width: 1025px) {
-    #searchInput {
-        width: 700px;
-    }
-}
+
 
 @media (max-width: 1000px) and (min-width: 930px) {
     .card {
@@ -979,44 +777,8 @@ nav {
     .homeBlogCard:not(:first-child) {
         margin-top: 0;
     }
-
-    #searchInput {
-        width: 600px;
-    }
 }
 
-@media (max-width:820px) {
-    .navbarNav {
-        display: none;
-    }
-
-    .social-icons {
-        display: none;
-    }
-
-    .navSeacrBaseDiv {
-        display: block
-    }
-
-    .hamburgerIcon i {
-        padding: 0px;
-        margin-top: -3px;
-        margin-right: 0px;
-        display: block;
-    }
-
-    .sliderBase {
-        margin-top: 0px;
-    }
-
-    #searchInput {
-        width: 500px;
-        position: absolute;
-        top: -5px;
-        right: 50px
-    }
-
-}
 
 
 @media (max-width: 768px) {
@@ -1032,7 +794,7 @@ nav {
     }
 
     header {
-        padding: 10px;
+        padding: 0px 20px;
     }
 
     /* .layout {
@@ -1064,10 +826,6 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-
-    #searchInput {
-        width: 350px;
-    }
 }
 
 @media (max-width:720px) {
@@ -1085,11 +843,6 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
         width: 100%;
     }
-
-    #searchInput {
-        width: 250px;
-    }
-
 }
 
 @media (max-width:540px) {
@@ -1098,14 +851,6 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         /* max-width: 956px; */
-    }
-
-    .imgCard {
-        height: 280px;
-    }
-
-    .sliderBase {
-        height: 370px;
     }
 
     .prevBtn,
@@ -1144,6 +889,7 @@ nav {
     .sidebar-meta {
         font-size: 13px;
     }
+
 }
 
 @media (max-width:316px) {

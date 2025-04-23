@@ -108,107 +108,57 @@ function displayNews(category) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function updateDropdown() {
-    const screenWidth = window.innerWidth;
-    const dropdown = document.getElementById('dropdown');
-    const navUl = document.querySelector('#navList');
-    const items = Array.from(navUl.children);
+// function updateDropdown() {
+//     const screenWidth = window.innerWidth;
+//     const dropdown = document.getElementById('dropdown');
+//     const navUl = document.querySelector('#navList');
+//     const items = Array.from(navUl.children);
 
-    let itemsToMove = 0;
+//     let itemsToMove = 0;
 
-    if (screenWidth < 650) {
-        itemsToMove = 5;
-    }
-    else if (screenWidth < 750) {
-        itemsToMove = 8;
-    }
-    else if (screenWidth < 880) {
-        itemsToMove = 4;
-    }
-    else if (screenWidth < 1070) {
-        itemsToMove = 2;
-    } else if (screenWidth < 1250) {
-        itemsToMove = 1;
-    }
+//     if (screenWidth < 650) {
+//         itemsToMove = 5;
+//     }
+//     else if (screenWidth < 750) {
+//         itemsToMove = 8;
+//     }
+//     else if (screenWidth < 880) {
+//         itemsToMove = 4;
+//     }
+//     else if (screenWidth < 1070) {
+//         itemsToMove = 2;
+//     } else if (screenWidth < 1250) {
+//         itemsToMove = 1;
+//     }
 
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    const dropdownItems = Array.from(dropdownMenu.children);
+//     const dropdownMenu = document.querySelector('.dropdown-menu');
+//     const dropdownItems = Array.from(dropdownMenu.children);
 
-    dropdownItems.forEach(dropItem => {
-        navUl.insertBefore(dropItem, dropdown);
-    });
+//     dropdownItems.forEach(dropItem => {
+//         navUl.insertBefore(dropItem, dropdown);
+//     });
 
-    if (dropdownMenu.children.length === 0) {
-        dropdown.style.display = "none";
-    }
+//     if (dropdownMenu.children.length === 0) {
+//         dropdown.style.display = "none";
+//     }
 
-    const updatedItems = Array.from(navUl.children).filter(li => !li.classList.contains('dropdown'));
+//     const updatedItems = Array.from(navUl.children).filter(li => !li.classList.contains('dropdown'));
 
-    for (let i = 0; i < itemsToMove; i++) {
-        const itemToMove = updatedItems[updatedItems.length - 1 - i];
-        if (itemToMove) {
-            dropdownMenu.insertBefore(itemToMove, dropdownMenu.firstChild);
-        }
-    }
+//     for (let i = 0; i < itemsToMove; i++) {
+//         const itemToMove = updatedItems[updatedItems.length - 1 - i];
+//         if (itemToMove) {
+//             dropdownMenu.insertBefore(itemToMove, dropdownMenu.firstChild);
+//         }
+//     }
 
-    if (itemsToMove > 0) {
-        dropdown.style.display = "block";
-    }
-}
+//     if (itemsToMove > 0) {
+//         dropdown.style.display = "block";
+//     }
+// }
 
 
-updateDropdown();
+// updateDropdown();
 
-window.addEventListener('resize', updateDropdown);
+// window.addEventListener('resize', updateDropdown);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-const slides = document.querySelectorAll('.imgCard');
-const prevBtn = document.querySelector('.prevBtn');
-const nextBtn = document.querySelector('.nextBtn');
-let currentIndex = 0;
-let autoSlide;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
-    });
-}
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-}
-
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-}
-
-function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 5000);
-}
-
-function stopAutoSlide() {
-    clearInterval(autoSlide);
-}
-
-// Event listeners
-nextBtn.addEventListener('click', () => {
-    stopAutoSlide();
-    nextSlide();
-    startAutoSlide();
-});
-
-prevBtn.addEventListener('click', () => {
-    stopAutoSlide();
-    prevSlide();
-    startAutoSlide();
-});
-
-// Start slider
-showSlide(currentIndex);
-startAutoSlide();
