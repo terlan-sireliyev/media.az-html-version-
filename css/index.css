@@ -1046,7 +1046,7 @@ nav {
 
     .news-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 6px;
     }
 
