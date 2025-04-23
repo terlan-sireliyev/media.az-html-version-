@@ -1052,7 +1052,17 @@ nav {
 
     .card img {
         width: 100%;
-        height: 121px;
+        height: 190px;
         object-fit: cover;
+    }
+
+    .sidebar-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar-meta {
+        font-size: 13px;
     }
 }
