@@ -22,6 +22,7 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="script/HamburgerMenu.js"></script>
+    <script type="module" src="script/NavbarSearch.js"></script>
     <script type="module" src="script/script.js"></script>
 
 </head>
@@ -45,12 +46,19 @@
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-telegram"></i>
                         <i class="fab fa-youtube"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                    <input type="text" id="searchInput" placeholder="Axtar..." style="display: none;" />
+                    <div class="navbarSearch" id="navbarSearch">
+                        <i class="fa-solid fa-magnifying-glass searchIcon" id="searchIcon"></i>
+                    </div>
+
                     <div class="hamburgerWrapper">
+
                         <div class="hamburgerIcon" id="hamburgerBtn">
+                            <!-- <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i> -->
                             <i class="fa-solid fa-bars"></i>
                         </div>
+                        <input type="text" id="searchInput" placeholder="Axtar..." style="display: none;" />
                         <nav class="mobileMenu" id="mobileMenu">
                             <ul class="hamburgerUl">
                                 <li class="hamburgerLi"><a href="#" class="hamburgerLink">📰 Siyasət</a></li>
