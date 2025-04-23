@@ -896,6 +896,13 @@ header {
 
 }
 
+@media (max-width:337px) {
+    .sidebar-meta {
+        font-size: 11px;
+    }
+
+}
+
 @media (max-width:316px) {
     .sidebar-meta {
         font-size: 11px;
