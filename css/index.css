@@ -660,6 +660,10 @@ header {
     padding: 20px 0px;
 }
 
+.news-card {
+    margin-top: 10px;
+}
+
 .news-card p {
     margin: 0;
     font-size: 14px;
