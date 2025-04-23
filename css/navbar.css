@@ -71,3 +71,67 @@
 .dropdown-menu li:hover {
     background-color: #f0f0f0;
 }
+
+/* Ana konteyner */
+.searchDiv {
+    display: none;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    gap: 10px;
+    position: absolute;
+    right: 35px;
+    top: 3px;
+    z-index: 10;
+}
+
+/* Input sahəsi */
+.searchDiv input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+    transition: width 0.3s ease;
+    outline: none;
+}
+
+/* .searchDiv input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    width: 250px;
+} */
+
+/* Axtar düyməsi */
+.searchDiv button:nth-of-type(1) {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchDiv button:nth-of-type(2):hover {
+    background-color: #0056b3;
+}
+
+/* Çıxış düyməsi */
+.closeSearchİnput {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.closeSearchİnput:hover {
+    background-color: #b02a37;
+}

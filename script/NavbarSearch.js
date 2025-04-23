@@ -4,16 +4,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchIcon = document.getElementById("searchIcon");
     const searchInput = document.getElementById("searchInput");
     const newsContainer = document.getElementById("news-container");
+    const closeSearchİnput = document.getElementById("closeSearchİnput");
 
     // Səhifə ilk yükləndikdə bütün xəbərləri göstər
     displayNews(data);
 
     // Axtarış inputunu aç və ya gizlət
     searchIcon.addEventListener("click", () => {
-        const isHidden = searchInput.style.display === "none";
-        searchInput.style.display = isHidden ? "inline-block" : "none";
-        if (isHidden) searchInput.focus();
+        if (searchInput.style.display === "none" || searchInput.style.display === "") {
+            searchInput.style.display = "flex";
+            const input = searchInput.querySelector("input");
+            if (input) input.focus();
+        } else {
+            searchInput.style.display = "none";
+        }
     });
+
+    closeSearchİnput.addEventListener("click", () => {
+        searchInput.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+        if (
+            !searchInput.contains(e.target) &&
+            !searchIcon.contains(e.target)
+        ) {
+            searchInput.style.display = "none";
+        }
+    });
+
 
     // Canlı axtarış
     searchInput.addEventListener("input", (e) => {
