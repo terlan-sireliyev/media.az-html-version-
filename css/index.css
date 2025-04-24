@@ -349,7 +349,7 @@ header {
     gap: 10px;
     justify-content: space-between;
     margin-top: 5px;
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 .sidebar-title {
@@ -366,7 +366,7 @@ header {
     gap: 10px;
     font-size: 15px;
     color: gray;
-    padding: 0px 5px;
+    padding: 0px 0px;
 }
 
 .sidebar-meta i {

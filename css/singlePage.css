@@ -757,4 +757,20 @@ header {
     .meta {
         font-size: 13px;
     }
+
+    .aBlockTitle h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:353px) {
+    .meta {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:314px) {
+    .meta {
+        font-size: 10px;
+    }
 }
