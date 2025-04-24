@@ -2,33 +2,21 @@
 <html lang="az">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bizim Media | Ən Son Xəbərlər</title>
-
     <!-- SEO Meta -->
+    <meta charset="UTF-8" />
     <meta name="description"
         content="Ən son siyasət, iqtisadiyyat və region xəbərləri Bizim Media-da. Etibarlı və operativ informasiya mənbəyi.">
-    <meta name="keywords"
-        content="bizim media, xəbər, son xəbərlər, siyasət, region, iqtisadiyyat, azərbaycan xəbərləri">
+    <meta name="keywords" content="bizim media, xəbər, son xəbərlər
+        , siyasət, region, iqtisadiyyat, azərbaycan xəbərləri">
     <meta name="author" content="Bizim Media">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Styles -->
-    <!-- <link rel="stylesheet" href="css/singlePage.css" /> -->
-    <!-- <link rel="stylesheet" href="css/footer.css"> -->
-
-
-    <!-- FontAwesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
-    <!-- <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/hamburgerMenu.css"> -->
-
-    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <title>Bizim Media</title>
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hamburgerMenu.css">
     <link rel="stylesheet" href="css/singlePage.css">
     <link rel="stylesheet" href="css/footer.css">
+
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
@@ -36,15 +24,25 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="script/HamburgerMenu.js"></script>
-    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/NavbarSearch.js"></script>
+    <!-- <script type="module" src="script/script.js"></script> -->
+
+
+    <!-- <script type="module" src="script/HamburgerMenu.js"></script> -->
+    <!-- <script type="module" src="script/NavbarSearch.js"></script> -->
+    <!-- <script type="module" src="script/slider.js"></script> -->
+    <!-- <script type="module" src="script/script.js"></script> -->
+
 </head>
 
 <body>
-    <div>
-        <div class="left">
-            Reklamınız üçün ideal<br />məkan!
-        </div>
 
+    <div>
+        <!-- Left Ad -->
+        <div class="left">
+            <img src="images/gif2.gif" alt="Advertising Banner" />
+        </div>
+        <!-- Header -->
         <header>
             <div class="headerClasster">
                 <div class="logoNavbar"><a href="/index.html">
@@ -56,26 +54,39 @@
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-telegram"></i>
                         <i class="fab fa-youtube"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                    <div class="searchDiv" id="searchInput">
+                        <input type="text" class="inputSearchSelf" placeholder="Axtar..." />
+                        <button>Axtar</button>
+                        <button class="closeSearchİnput" id="closeSearchİnput">X</button>
+                    </div>
+                    <!-- <input type="text" id="searchInput" placeholder="Axtar..." style="display: none;" /> -->
+                    <div class="navbarSearch" id="navbarSearch">
+                        <i class="fa-solid fa-magnifying-glass searchIcon" id="searchIcon"></i>
+                    </div>
+
                     <div class="hamburgerWrapper">
                         <div class="hamburgerIcon" id="hamburgerBtn">
                             <i class="fa-solid fa-bars"></i>
                         </div>
+
                         <nav class="mobileMenu" id="mobileMenu">
+                            <div class="hamburgerClose">
+                                <i class="fa-solid fa-xmark" id="hamburgerClose"></i>
+                            </div>
                             <ul class="hamburgerUl">
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📰 Siyasət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">💰 İqtisadiyyat</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🏛️ Cəmiyyət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎭 Mədəniyyət</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🚨 Kriminal</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🎤 Şou-TIME</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Siyasət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">İqtisadiyyat</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Cəmiyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Mədəniyyət</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Kriminal</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Şou-TIME</a></li>
 
                                 <li class="hamburgerDivider"></li> <!-- Ayrıcı -->
 
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">ℹ️ Haqqımızda</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">📧 Əlaqə</a></li>
-                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">🧾 About</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Haqqımızda</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">Əlaqə</a></li>
+                                <li class="hamburgerLi"><a href="#" class="hamburgerLink">About</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -84,7 +95,7 @@
             <div class="navbar-wrapper">
                 <nav class="navbarNav">
                     <ul id="navList" class="navList">
-                        <li class="navList-item active">Ana sehive</li>
+                        <!-- <li class="navList-item active">Ana sehive</li> -->
                         <li class="navList-item ">Siyaset</li>
                         <li class="navList-item ">Iqtisadiyyat</li>
                         <li class="navList-item ">Cemiyyet</li>
@@ -92,21 +103,24 @@
                         <li class="navList-item ">Kirminal</li>
                         <li class="navList-item ">Dunya</li>
                         <li class="navList-item ">Idman</li>
-                        <li class="navList-item ">SouTime</li>
-                        <li class="navList-item ">Biznes</li>
+                        <!-- <li class="navList-item ">SouTime</li> -->
+                        <!-- <li class="navList-item ">Biznes</li> -->
                         <!-- Categories will be added dynamically -->
                         <li class="dropdown" id="dropdown">
                             Digərləri ▾
                             <ul class="dropdown-menu" id="dropdownMenu">
+                                <li>SouTime</li>
+                                <li>Biznes</li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="layout">
 
-                <div class="singlePageGrid">
-                    <!-- Əsas Xəbər -->
+            <!-- Content -->
+            <div class="layout">
+                <!-- Center Content -->
+                <div class="center">
                     <article class="blogContent">
                         <img src="https://bizim.media/file/articles/2025/04/15/1744717884_5472337206610881187-1.jpg"
                             alt="Azərbaycan siyasəti ilə bağlı xəbər şəkli" />
@@ -201,108 +215,266 @@
                             </div>
                         </div>
                     </article>
+                </div>
+                <!-- Right Sidebar -->
+                <div class="rightCenterMenu">
+                    <div class="singleRight-sidebar" id="singleRight-sidebar">
+                        <aside class="singleSimilarNews">
 
+                            <div class="singlePageSimilarCard">
+                                <div class="singlePageSimilarCardLent">
+                                    <h3>Xeber Lenti</h3>
+                                </div>
+                                <a href="./singlePage.html" class="singlePageRightLink">
+                                    <div class="sidebarSinglePageg-card">
+                                        <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                            alt="#" />
+                                        <div class="signleSidebar-content">
+                                            <div class="signleSidebar-title">Həbsdə olan menecer xəstəxanaya
+                                                yerləşdirildi
+                                            </div>
+                                            <div class="signleSidebar-meta">
+                                                <span class="signleCategory"><i class="fas fa-folder"></i>
+                                                    Siyasət</span>
+                                                <span class="signleTime"><i class="fas fa-clock"></i> 12:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./singlePage.html" class="singlePageRightLink">
+                                    <div class="sidebarSinglePageg-card">
+                                        <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                            alt="#" />
+                                        <div class="signleSidebar-content">
+                                            <div class="signleSidebar-title">Həbsdə olan menecer xəstəxanaya
+                                                yerləşdirildi
+                                            </div>
+                                            <div class="signleSidebar-meta">
+                                                <span class="signleCategory"><i class="fas fa-folder"></i>
+                                                    Siyasət</span>
+                                                <span class="signleTime"><i class="fas fa-clock"></i> 12:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./singlePage.html" class="singlePageRightLink">
+                                    <div class="sidebarSinglePageg-card">
+                                        <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                            alt="#" />
+                                        <div class="signleSidebar-content">
+                                            <div class="signleSidebar-title">Həbsdə olan menecer xəstəxanaya
+                                                yerləşdirildi
+                                            </div>
+                                            <div class="signleSidebar-meta">
+                                                <span class="signleCategory"><i class="fas fa-folder"></i>
+                                                    Siyasət</span>
+                                                <span class="signleTime"><i class="fas fa-clock"></i> 12:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
 
-
-                    <!-- Oxşar xəbərlər -->
-                    <aside class="similarNews">
-                        <div class="similarCard">
-                            <div class="similarCardLent">
-                                <h3>Xeber Lenti</h3>
                             </div>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-card">
-                                    <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-content">
-                                        <div class="sidebar-title">Həbsdə olan menecer xəstəxanaya yerləşdirildi</div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-card">
-                                    <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-content">
-                                        <div class="sidebar-title">"Mançester Siti" yayda portuqaliyalı qapıçını
-                                            transfer
-                                            edə bilər</div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-card">
-                                    <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-content">
-                                        <div class="sidebar-title">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            <div class="similarCardAnotherBase">
 
-                        <div class="similarCardAnother">
-                            <div class="similarCardLent">
-                                <h3>Basliq 3</h3>
+                                <div>
+                                    <div class="singlePageSimilarCardLent ">
+                                        <h3>Basliq 1</h3>
+                                    </div>
+                                    <div class="similarCardAnother">
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="singlePageSimilarCardLent ">
+                                        <h3>Basliq 2</h3>
+                                    </div>
+                                    <div class="similarCardAnother">
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="./singlePage.html" class="rightLink">
+                                            <div class="sidebar-cardAnother">
+                                                <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
+                                                    alt="xəbər şəkli" />
+                                                <div class="sidebar-contentAnother">
+                                                    <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya
+                                                        yerləşdirildi</div>
+                                                    <div class="sidebar-meta">
+                                                        <span class="category"><i class="fas fa-folder"></i>
+                                                            Siyasət</span>
+                                                        <span class="time"><i class="fas fa-clock"></i> 12:30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-cardAnother">
-                                    <img src="https://sonxeber.az/uploads/0a62d7d10ad7f8cd080ef69c95439772.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-contentAbother">
-                                        <div class="sidebar-titleAnother">Həbsdə olan menecer xəstəxanaya yerləşdirildi
-                                        </div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-cardAnother">
-                                    <img src="https://sonxeber.az/uploads/47c59b85d28df4d3221eaab9b20da9fb.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-contentAbother">
-                                        <div class="sidebar-titleAnother">"Mançester Siti" yayda portuqaliyalı qapıçını
-                                            transfer
-                                            edə bilər</div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="./singlePage.html" class="rightLink">
-                                <div class="sidebar-cardAnother">
-                                    <img src="https://sonxeber.az/uploads/37b0e1101eb833302abf75678447b4f6.jpg"
-                                        alt="#" />
-                                    <div class="sidebar-contentAbother">
-                                        <div class="sidebar-titleAnother">Müavinət və təqaüdlərlə bağlı ŞAD XƏBƏR</div>
-                                        <div class="sidebar-meta">
-                                            <span class="category"><i class="fas fa-folder"></i> Siyasət</span>
-                                            <span class="time"><i class="fas fa-clock"></i> 12:30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </aside>
-
+                        </aside>
+                    </div>
                 </div>
             </div>
             <footer class="footer">
@@ -361,9 +533,8 @@
                 </div>
             </footer>
         </header>
-
         <div class="right">
-            Reklamınız üçün ideal<br />məkan!
+            <img src="images/gif2.gif" alt="Advertising Banner" />
         </div>
     </div>
 </body>

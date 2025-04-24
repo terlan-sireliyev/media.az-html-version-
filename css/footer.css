@@ -2,9 +2,10 @@
     background-color: #140202;
     color: white;
     padding: 60px 30px;
-    font-family: 'Georgia', serif;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
     margin-top: 20px;
 }
+
 
 .footerContainer {
     display: flex;
@@ -114,7 +115,7 @@
 .footerBottom {
     list-style-type: none;
     padding: 0;
-    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: white;
 }

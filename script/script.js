@@ -109,7 +109,7 @@ function displayNews(category) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // function updateDropdown() {
-//     const screenWidth = window.innerWidth;
+
 //     const dropdown = document.getElementById('dropdown');
 //     const navUl = document.querySelector('#navList');
 //     const items = Array.from(navUl.children);
@@ -162,3 +162,8 @@ function displayNews(category) {
 // window.addEventListener('resize', updateDropdown);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// const screenWidth = window.innerWidth;
+
+// console.log(screenWidth)
