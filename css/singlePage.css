@@ -383,7 +383,7 @@
 
  .singleSimilarNews {
      flex: 1;
-     min-width: 250px;
+     /* min-width: 250px; */
  }
 
  .singlePageSimilarCard {
@@ -447,7 +447,6 @@
      color: #111;
      outline: none;
      font-weight: bold;
-     word-break: break-all;
      display: -webkit-box;
      display: box;
      -webkit-box-orient: vertical;
@@ -655,7 +654,7 @@
      }
 
      header {
-         padding: 0px 20px;
+         padding: 0px 10px;
      }
 
      .center {
@@ -697,6 +696,10 @@
 
      .aBlockTitle h2 {
          font-size: 18px;
+     }
+
+     .blogContent img {
+         height: 300px;
      }
  }
 
