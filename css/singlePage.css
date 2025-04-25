@@ -193,12 +193,11 @@
      flex: 3;
      background: #fff;
      padding: 10px 0px;
-     /* border-radius: 10px; */
-     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
  }
 
  .blogContent img {
      width: 100%;
+     height: 350px;
      border-radius: 10px;
      margin-bottom: 15px;
  }
@@ -286,6 +285,8 @@
      align-items: center;
      border-bottom: 1px solid black;
      margin-bottom: 15px;
+     font-size: 18px;
+     padding-bottom: 5px;
  }
 
  .aAllShow a {
@@ -391,12 +392,17 @@
  }
 
  .singlePageSimilarCardLent {
-     background: #c4c4c466;
+     background: #00bbd4;
+     color: #fff;
+     padding: 10px 10px;
      border-radius: 3px;
+     margin-bottom: 5px;
+     text-align: center;
  }
 
  .singlePageSimilarCardLent h3 {
-     padding: 5px 10px;
+     font-size: 16px;
+     margin-bottom: 0px;
 
  }
 
@@ -572,7 +578,6 @@
 
  @media (max-width: 1130px) {
      .navList {
-         /* background-color: red; */
          gap: 25px;
      }
  }
@@ -587,13 +592,9 @@
      .center {
          margin: 0 0px;
      }
-
-
  }
 
- @media (max-width: 1000px) and (min-width: 930px) {}
-
- @media (max-width: 930px) {
+ @media (max-width: 1150px) {
      .layout {
          display: flex;
          flex-direction: column;

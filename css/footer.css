@@ -4,6 +4,8 @@
     padding: 60px 30px;
     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
     margin-top: 20px;
+    max-width: 1031px;
+    margin: auto;
 }
 
 
@@ -124,6 +126,11 @@
     color: #00cc00;
     border-bottom: 2px solid #00cc00;
 } */
+@media (max-width: 1150px) {
+    .footer {
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 1000px) {
     .footerContainer {
@@ -165,7 +172,6 @@
     }
 
 }
-
 
 @media (max-width: 792px) {
     .footerContainer {

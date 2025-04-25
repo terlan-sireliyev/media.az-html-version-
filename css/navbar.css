@@ -193,13 +193,15 @@
         display: none;
     }
 
+
+
+
     .hamburgerIcon i {
         /* background: green; */
         padding: 0px;
         /* font-size: 20px; */
         margin-top: -3px;
         margin-right: 0px;
-        ;
         display: block;
     }
 
@@ -207,7 +209,16 @@
         margin-top: 0px;
     }
 
-
+    .headerClasster {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+    }
 
 
 }
