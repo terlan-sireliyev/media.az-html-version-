@@ -174,7 +174,7 @@
     .navList {
         display: flex;
         /* height: 50px; */
-        gap: 55px;
+        /* gap: 55px; */
     }
 }
 

@@ -164,6 +164,6 @@ function displayNews(category) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// const screenWidth = window.innerWidth;
+const screenWidth = window.innerWidth;
 
-// console.log(screenWidth)
+console.log(screenWidth)

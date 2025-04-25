@@ -1,151 +1,83 @@
-/* Reset və Box Sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-/* Layout üçün Flex */
-body>div {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-/* Sol və Sağ Reklam Sahələri */
-.left,
-.right {
-    width: 170px;
-    background-color: #5f00d0;
-    color: white;
-    text-align: center;
-    /* padding: 20px 10px; */
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-}
-
-
-.left img {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-.right img {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-/* Ortadakı Məzmun Sahəsi */
-.center {
-    max-width: 1100px;
-    flex: 1;
-    /* margin: 0 20px; */
-}
-
-.rightCenterMenu {
-    width: 280px;
-}
-
-/* Header */
-header {
-    flex: 1;
-    padding: 5px 20px;
-    border-bottom: 2px solid #00b140;
-    position: relative;
-    /* background: red; */
-}
+ .headerClasster {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 0px;
+     background-color: white;
+     position: sticky;
+     top: 0;
+     z-index: 9999;
+ }
 
-.headerClasster {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
+ .socialIconsBase {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     position: relative;
+ }
 
-.socialIconsBase {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-}
 
+ .social-icons {
+     margin-top: 0px !important;
+     /* background: green; */
+     /* padding: 0; */
+     margin-top: -30px;
+ }
 
-.social-icons {
-    margin-top: 0px !important;
-    /* background: green; */
-    /* padding: 0; */
-    margin-top: -30px;
-}
+ .social-icons i {
+     display: flex;
+     justify-content: center;
+     /* place-items: center; */
+     /* align-content: center; */
+     align-items: center;
+     /* gap: 25px; */
+     padding: 10px;
+     width: 40px;
+     /* margin-top: 0; */
+     /* font-size: 55px; */
+     /* background: gold; */
+ }
 
-.social-icons i {
-    display: flex;
-    justify-content: center;
-    /* place-items: center; */
-    /* align-content: center; */
-    align-items: center;
-    /* gap: 25px; */
-    padding: 10px;
-    width: 40px;
-    /* margin-top: 0; */
-    /* font-size: 55px; */
-    /* background: gold; */
-}
 
 
 
 
 
 
+ /* Logo */
+ .logoNavbar {
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 0;
+ }
 
-/* Logo */
-.logoNavbar {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
+ .logoNavbar a {
+     text-decoration-line: none;
+     color: #000;
+ }
 
-.logoNavbar a {
-    text-decoration-line: none;
-    color: #000;
-}
+ .logoNavbar a span {
+     color: #00b140;
+ }
 
-.logoNavbar a span {
-    color: #00b140;
-}
+ /* Sosial ikonlar */
+ .social-icons {
+     margin-top: 10px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ }
 
-/* Sosial ikonlar */
-.social-icons {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+ .social-icons i {
+     font-size: 18px;
+     cursor: pointer;
+ }
 
-.social-icons i {
-    font-size: 18px;
-    cursor: pointer;
-}
+ .inputAndClose {
+     position: relative;
+ }
 
-.inputAndClose {
-    position: relative;
-}
 
 
 
@@ -198,14 +130,14 @@ header {
 
 
 
+ /* Layout Mərkəzləşdirmə */
+ .layout {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     /* padding: 20px; */
+ }
 
-/* Layout Mərkəzləşdirmə */
-.layout {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* padding: 20px; */
-}
 
 
 
@@ -248,160 +180,160 @@ header {
 
 
 
+ /* singlePage center side start */
+ .singlePageGrid {
+     display: flex;
+     gap: 20px;
+     align-items: flex-start;
+     flex-wrap: wrap;
+ }
 
-/* singlePage center side start */
-.singlePageGrid {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
+ /* Əsas Xəbər */
+ .blogContent {
+     flex: 3;
+     background: #fff;
+     padding: 10px 0px;
+     /* border-radius: 10px; */
+     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+ }
 
-/* Əsas Xəbər */
-.blogContent {
-    flex: 3;
-    background: #fff;
-    padding: 10px 0px;
-    /* border-radius: 10px; */
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
-}
+ .blogContent img {
+     width: 100%;
+     border-radius: 10px;
+     margin-bottom: 15px;
+ }
 
-.blogContent img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
+ .blogContent,
+ .news-title {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     color: #222;
+     font-weight: 700;
+     margin-top: 20px;
+     padding: 0;
 
-.blogContent,
-.news-title {
-    font-size: 28px;
-    margin-bottom: 12px;
-    color: #222;
-    word-break: break-all;
-}
+ }
 
-.meta {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-}
+ .meta {
+     font-size: 14px;
+     color: #666;
+     margin-bottom: 15px;
+ }
 
-.meta .category,
-.meta .time {
-    margin-right: 12px;
-}
+ .meta .category,
+ .meta .time {
+     margin-right: 12px;
+ }
 
-.meta i {
-    margin-right: 5px;
-    color: #0077cc;
-}
+ .meta i {
+     margin-right: 5px;
+     color: #0077cc;
+ }
 
-.meta .views {
-    margin-right: 12px;
-    color: #666;
-}
+ .meta .views {
+     margin-right: 12px;
+     color: #666;
+ }
 
-.meta .views i {
-    margin-right: 5px;
-    color: #0077cc;
-}
+ .meta .views i {
+     margin-right: 5px;
+     color: #0077cc;
+ }
 
 
-.description {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #444;
-    word-break: break-all;
-}
+ .description {
+     font-size: 18px;
+     line-height: 1.7;
+ }
 
-/* singlePage center side end */
+ /* singlePage center side end */
 
 
-/* singlePage center oxsar xeberler start */
+ /* singlePage center oxsar xeberler start */
 
-.aBlockWrap {
-    margin-top: 20px;
-}
+ .aBlockWrap {
+     margin-top: 20px;
+ }
 
-.bigPost {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-}
+ .bigPost {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+     gap: 20px;
+ }
 
-.BigPostImage {
-    height: 150px;
-    overflow: hidden;
-}
+ .BigPostImage {
+     height: 150px;
+     overflow: hidden;
+ }
 
-.BigPostImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
+ .BigPostImage img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 8px;
+ }
 
 
-.bigPost a {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    text-decoration-line: none;
-}
+ .bigPost a {
+     border-bottom: 1px solid #eee;
+     padding-bottom: 10px;
+     text-decoration-line: none;
+ }
 
-.aBlockTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-    margin-bottom: 15px;
-}
+ .aBlockTitle {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid black;
+     margin-bottom: 15px;
+ }
 
-.aAllShow a {
-    text-decoration-line: none;
-    color: black;
-}
+ .aAllShow a {
+     text-decoration-line: none;
+     color: black;
+ }
 
-.aAllShow a:hover {
-    text-decoration-line: underline;
-    color: black;
-}
+ .aAllShow a:hover {
+     text-decoration-line: underline;
+     color: black;
+ }
 
 
 
-.BigPostInfo {
-    margin-top: 10px;
-}
+ .BigPostInfo {
+     margin-top: 10px;
+ }
 
-.BigPostTitle {
-    font-size: 1.2rem;
+ .BigPostTitle {
+     font-size: 1.2rem;
 
-    color: black;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: -webkit-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+     color: black;
+     font-weight: bold;
+     margin-bottom: 5px;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
 
-.BigPostExtra {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    color: gray;
-    margin-top: 15px;
-}
+ .BigPostExtra {
+     display: flex;
+     justify-content: space-between;
+     font-size: 0.9rem;
+     color: gray;
+     margin-top: 15px;
+ }
 
-.postCategory {
-    color: #007bff;
-}
+ .postCategory {
+     color: #007bff;
+ }
 
 
-/* singlePage center oxsar xeberler end */
+ /* singlePage center oxsar xeberler end */
 
 
 
@@ -438,343 +370,343 @@ header {
 
 
 
-/* Lent xeberler start */
-.singleRight-sidebar {
-    margin-top: 20px;
-}
+ /* Lent xeberler start */
+ .singleRight-sidebar {
+     margin-top: 20px;
+ }
 
-.singleRight-sidebar h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+ .singleRight-sidebar h3 {
+     font-size: 18px;
+     margin-bottom: 10px;
+ }
 
-.singleSimilarNews {
-    flex: 1;
-    min-width: 250px;
-}
+ .singleSimilarNews {
+     flex: 1;
+     min-width: 250px;
+ }
 
-.singlePageSimilarCard {
-    margin-top: 4px;
-    margin-bottom: 20px;
-}
+ .singlePageSimilarCard {
+     margin-top: 4px;
+     margin-bottom: 20px;
+ }
 
-.singlePageSimilarCardLent {
-    background: #c4c4c466;
-    border-radius: 3px;
-}
+ .singlePageSimilarCardLent {
+     background: #c4c4c466;
+     border-radius: 3px;
+ }
 
-.singlePageSimilarCardLent h3 {
-    padding: 5px 10px;
+ .singlePageSimilarCardLent h3 {
+     padding: 5px 10px;
 
-}
+ }
 
-.singlePageRightLink {
-    cursor: pointer;
-    text-decoration-line: none;
-    color: #000;
-    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
+ .singlePageRightLink {
+     cursor: pointer;
+     text-decoration-line: none;
+     color: #000;
+     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 
-}
+ }
 
-.sidebarSinglePageg-card {
-    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
-    gap: 10px;
-    display: flex;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #c4c4c4;
-    margin-top: 15px;
-    /* flex-direction: column;
+ .sidebarSinglePageg-card {
+     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
+     gap: 10px;
+     display: flex;
+     margin-bottom: 15px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid #c4c4c4;
+     margin-top: 15px;
+     /* flex-direction: column;
     align-items: flex-start; */
-}
-
-.sidebarSinglePageg-card img {
-    width: 70px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.signleSidebar-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-    /* margin-top: 5px; */
-    /* padding: 5px; */
-}
-
-.signleSidebar-title {
-    font-size: 16px;
-    color: #111;
-    outline: none;
-    font-weight: bold;
-    word-break: break-all;
-    display: -webkit-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.signleSidebar-meta {
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    color: gray;
-}
-
-.signleSidebar-meta i {
-    margin-right: 4px;
-}
-
-/* Lent xeberler end */
-
-
-
-
-/* lentin altinda yerlesen bloglar start */
-.similarCardAnother {
-    margin-bottom: 25px;
-}
-
-.rightLink {
-    cursor: pointer;
-    text-decoration-line: none;
-    color: #000;
-    margin-top: 15px;
-    display: block;
-    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
-
-}
-
-.sidebar-titleAnother {
-    word-break: break-all;
-    font-size: 18px;
-    font-weight: bold;
-    display: -webkit-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.sidebar-contentAnother {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 5px;
-
-}
-
-.sidebar-cardAnother img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.sidebar-meta {
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    color: gray;
-}
-
-/* lentin altinda yerlesen bloglar end */
+ }
+
+ .sidebarSinglePageg-card img {
+     width: 70px;
+     height: 80px;
+     object-fit: cover;
+     border-radius: 4px;
+ }
+
+ .signleSidebar-content {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     justify-content: space-between;
+     /* margin-top: 5px; */
+     /* padding: 5px; */
+ }
+
+ .signleSidebar-title {
+     font-size: 16px;
+     color: #111;
+     outline: none;
+     font-weight: bold;
+     word-break: break-all;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .signleSidebar-meta {
+     display: flex;
+     gap: 10px;
+     font-size: 12px;
+     color: gray;
+ }
+
+ .signleSidebar-meta i {
+     margin-right: 4px;
+ }
+
+ /* Lent xeberler end */
+
+
+
+
+ /* lentin altinda yerlesen bloglar start */
+ .similarCardAnother {
+     margin-bottom: 25px;
+ }
+
+ .rightLink {
+     cursor: pointer;
+     text-decoration-line: none;
+     color: #000;
+     margin-top: 15px;
+     display: block;
+     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
+
+ }
+
+ .sidebar-titleAnother {
+     word-break: break-all;
+     font-size: 18px;
+     font-weight: bold;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .sidebar-contentAnother {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     margin-top: 5px;
+
+ }
+
+ .sidebar-cardAnother img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+     border-radius: 4px;
+ }
+
+ .sidebar-meta {
+     display: flex;
+     gap: 10px;
+     font-size: 12px;
+     color: gray;
+ }
+
+ /* lentin altinda yerlesen bloglar end */
 
 
 
 
 
 
-@media (max-width: 1520px) and (min-width: 1360px) {
-    .bigPost {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
-        gap: 20px;
-    }
-}
+ @media (max-width: 1520px) and (min-width: 1360px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+         gap: 20px;
+     }
+ }
 
-@media (max-width: 1360px) and (min-width: 1310px) {
-    .bigPost {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
-        gap: 20px;
-    }
-}
+ @media (max-width: 1360px) and (min-width: 1310px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+         gap: 20px;
+     }
+ }
 
-@media (max-width: 1313px) and (min-width: 1290px) {
-    .bigPost {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
-        gap: 20px;
-    }
-}
+ @media (max-width: 1313px) and (min-width: 1290px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
+         gap: 20px;
+     }
+ }
 
-@media (max-width: 1167px) {
-    .bigPost {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
-        gap: 20px;
-    }
-}
+ @media (max-width: 1167px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+         gap: 20px;
+     }
+ }
 
 
 
 
 
-@media (max-width: 1290px) {
+ @media (max-width: 1290px) {
 
-    .left,
-    .right {
-        display: none;
-    }
-}
+     .left,
+     .right {
+         display: none;
+     }
+ }
 
-@media (max-width: 1130px) {
-    .navList {
-        /* background-color: red; */
-        gap: 25px;
-    }
-}
+ @media (max-width: 1130px) {
+     .navList {
+         /* background-color: red; */
+         gap: 25px;
+     }
+ }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+ @media (max-width: 1024px) and (min-width: 769px) {
 
-    .left,
-    .right {
-        width: 120px;
-    }
+     .left,
+     .right {
+         width: 120px;
+     }
 
-    .center {
-        margin: 0 0px;
-    }
+     .center {
+         margin: 0 0px;
+     }
 
 
-}
+ }
 
-@media (max-width: 1000px) and (min-width: 930px) {}
+ @media (max-width: 1000px) and (min-width: 930px) {}
 
-@media (max-width: 930px) {
-    .layout {
-        display: flex;
-        flex-direction: column;
-    }
+ @media (max-width: 930px) {
+     .layout {
+         display: flex;
+         flex-direction: column;
+     }
 
-    .rightCenterMenu {
-        width: 100%;
-    }
+     .rightCenterMenu {
+         width: 100%;
+     }
 
-    .right-sidebar {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+     .right-sidebar {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 20px;
+     }
 
-    .homeBlogCard:not(:first-child) {
-        margin-top: 0;
-    }
+     .homeBlogCard:not(:first-child) {
+         margin-top: 0;
+     }
 
-    .blogContent {
-        padding: 0px 0px;
-    }
+     .blogContent {
+         padding: 0px 0px;
+     }
 
-    .singleSimilarNews {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+     .singleSimilarNews {
+         display: flex;
+         flex-direction: column-reverse;
+     }
 
-    .similarCardAnother {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-        gap: 20px;
-    }
+     .similarCardAnother {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+         gap: 20px;
+     }
 
 
-}
+ }
 
-@media (max-width: 775px) {
-    .bigPost {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
-        gap: 20px;
-    }
-}
+ @media (max-width: 775px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
+         gap: 20px;
+     }
+ }
 
 
 
-@media (max-width: 768px) {
-    body>div {
-        flex-direction: column;
-    }
+ @media (max-width: 768px) {
+     body>div {
+         flex-direction: column;
+     }
 
-    .left,
-    .right {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
+     .left,
+     .right {
+         width: 100%;
+         text-align: center;
+         padding: 15px;
+     }
 
-    header {
-        padding: 0px 20px;
-    }
+     header {
+         padding: 0px 20px;
+     }
 
-    .center {
-        margin: 0 auto;
-        max-width: 100%;
-        width: 100%;
-    }
+     .center {
+         margin: 0 auto;
+         max-width: 100%;
+         width: 100%;
+     }
 
-    .social-icons {
-        display: none;
-    }
+     .social-icons {
+         display: none;
+     }
 
-    .BigPostImage {
-        height: 180px;
-    }
+     .BigPostImage {
+         height: 180px;
+     }
 
-    .aBlockWrap {
-        display: flex;
-        flex-direction: column;
-    }
+     .aBlockWrap {
+         display: flex;
+         flex-direction: column;
+     }
 
-    .miniPost ul {
-        width: 100%;
-    }
+     .miniPost ul {
+         width: 100%;
+     }
 
 
-}
+ }
 
 
-@media (max-width:500px) {
-    .rightLink {
-        margin-top: 0px;
-        /* background-color: red; */
-    }
+ @media (max-width:500px) {
+     .rightLink {
+         margin-top: 0px;
+         /* background-color: red; */
+     }
 
-    .meta {
-        font-size: 13px;
-    }
+     .meta {
+         font-size: 13px;
+     }
 
-    .aBlockTitle h2 {
-        font-size: 18px;
-    }
-}
+     .aBlockTitle h2 {
+         font-size: 18px;
+     }
+ }
 
-@media (max-width:353px) {
-    .meta {
-        font-size: 11px;
-    }
-}
+ @media (max-width:353px) {
+     .meta {
+         font-size: 11px;
+     }
+ }
 
-@media (max-width:314px) {
-    .meta {
-        font-size: 10px;
-    }
-}
+ @media (max-width:314px) {
+     .meta {
+         font-size: 10px;
+     }
+ }
