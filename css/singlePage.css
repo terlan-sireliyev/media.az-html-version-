@@ -3,12 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Layout üçün Flex */
 body>div {
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Sol və Sağ Reklam Sahələri */
@@ -468,12 +472,12 @@ header {
     cursor: pointer;
     text-decoration-line: none;
     color: #000;
-    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 
 }
 
 .sidebarSinglePageg-card {
-    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
     gap: 10px;
     display: flex;
     margin-bottom: 15px;
@@ -543,7 +547,7 @@ header {
     color: #000;
     margin-top: 15px;
     display: block;
-    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 
 }
 

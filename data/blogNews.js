@@ -1,12 +1,13 @@
 export const data = [
+
     {
         id: 1,
-        img: "https://bizim.media/file/articles/2025/04/21/1745254909_-0e915db6174418281839761699410245084.jpg",
-        title: "Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət məzmunla zənginləşir”...",
-        category: "Siyasət",
-        time: "11:00",
-        description:
-            "“Şadam ki, qədim tarixə və xeyirxah ənənələrə əsaslanan Azərbaycan-Çin münasibətləri yüksələn xətlə inkişaf edir, bizim strateji tərəfdaşlığımız isə yeni müsbət məzmunla zənginləşir”. Bizim.Media xəbər verir ki, bu fikri Prezident İlham Əliyev Çinin Sinxua agentliyinə müsahibəsində səsləndirib. Dövlətimizin başçısı qeyd edib ki, fəal dialoq, şəxsi görüşlər, telefon danışıqları, məktubların mübadiləsi əsasında yaranan qarşılıqlı hörmət və etimad ikitərəfli münasibətlərin dərinləşməsində misilsiz rol oynayır."
+        img: "https://bizim.media/file/articles/2025/04/21/1745237383_1.jpg",
+        title: "Qızıl kəskin BAHALAŞDI",
+        category: "İqtisadiyyat",
+        time: "15:30",
+        description: "Nyu-Yorkun COMEX əmtəə birjasında qızılın bir troya unsiyasının qiyməti 76,50 dollar artaraq 3 404,90 dollar təşkil edib. Bizim.Media xəbər verir ki, gümüş isə 0,34 dollar artaraq 33,12 dollara bərabər olub."
+
     },
 
     {
@@ -47,12 +48,12 @@ export const data = [
     },
     {
         id: 6,
-        img: "https://bizim.media/file/articles/2025/04/21/1745237383_1.jpg",
-        title: "Qızıl kəskin BAHALAŞDI",
-        category: "İqtisadiyyat",
-        time: "15:30",
-        description: "Nyu-Yorkun COMEX əmtəə birjasında qızılın bir troya unsiyasının qiyməti 76,50 dollar artaraq 3 404,90 dollar təşkil edib. Bizim.Media xəbər verir ki, gümüş isə 0,34 dollar artaraq 33,12 dollara bərabər olub."
-
+        img: "https://bizim.media/file/articles/2025/04/21/1745254909_-0e915db6174418281839761699410245084.jpg",
+        title: "Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət məzmunla zənginləşir”...",
+        category: "Siyasət",
+        time: "11:00",
+        description:
+            "“Şadam ki, qədim tarixə və xeyirxah ənənələrə əsaslanan Azərbaycan-Çin münasibətləri yüksələn xətlə inkişaf edir, bizim strateji tərəfdaşlığımız isə yeni müsbət məzmunla zənginləşir”. Bizim.Media xəbər verir ki, bu fikri Prezident İlham Əliyev Çinin Sinxua agentliyinə müsahibəsində səsləndirib. Dövlətimizin başçısı qeyd edib ki, fəal dialoq, şəxsi görüşlər, telefon danışıqları, məktubların mübadiləsi əsasında yaranan qarşılıqlı hörmət və etimad ikitərəfli münasibətlərin dərinləşməsində misilsiz rol oynayır."
     },
     {
         id: 7,
@@ -253,7 +254,7 @@ export const data = [
             "Bakıda satıcıya saxta əskinas verib soyğunçuluq edən şəxs saxlanılıb."
     },
     {
-        id: 29,
+        id: 30,
         img: "https://sonxeber.az/uploads/1745224346aile.jpg",
         title: "Bir ailə dəm qazından məhv oldu - Ata, ana, 2 övlad...",
         category: "Kriminal",
@@ -262,7 +263,7 @@ export const data = [
             "Tərtərdə bir ailənin 4 üzvü dəm qazından zəhərlənərək ölüb.Qəsəbədə yaşayan əslən Kəlbəcər rayonundan olan bir ailənin 4 üzvü: Tağızadə Rüfət Mais oğlu, həyat yoldaşı Tağıyeva Əfsanə Fəqan qızı və övladları Ümid və Sürəyya yaşadıqları evdə dəm qazından boğularaq ölüblər."
     },
     {
-        id: 29,
+        id: 31,
         img: "https://sonxeber.az/uploads/1744282333iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.png",
         title: "Nazim Quliyevə HÖKM OXUNDU...",
         category: "Kriminal",
@@ -270,7 +271,7 @@ export const data = [
         description:
             "İdeal qəzetinin baş redaktoru Nazim Quliyevin cinayət işinin məhkəmə istintaqı başa çatıb.Oxu.Az-ın məlumatına görə, Bakı Ağır Cinayətlər Məhkəməsinin hakimi Cavid Hüseynovun sədrliyi ilə keçirilən prosesdə prokuror ittiham nitqi ilə çıxış edərək Nazim Quliyevin 9 il 6 ay azadlıqdan məhrum olunmasını məhkəməyə təklif edib. Qeyd edək ki, Nazim Quliyev Daxili İşlər Nazirliyinin Baş Mütəşəkkil Cinayətkarlıqla Mübarizə İdarəsi tərəfindən saxlanılaraq cinayət məsuliyyətinə cəlb edilib. Nazim Quliyevin barəsində Cinayət Məcəlləsinin 178.2.4-cü (xeyli miqdarda ziyan vurmaqla dələduzluq törətmək) maddəsi ilə ittiham irəli sürülüb."
     }, {
-        id: 30,
+        id: 32,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745237531_imtahanaa.jpg",
         title: "Qəbulda 300, 400, 700 bal sevdasını tamamilə unutmalıyıq...",
         category: "Təhsil",
@@ -279,7 +280,7 @@ export const data = [
             "“Bal sistemində nəinki 10-20, hətta 40-50 ballıq fərq nisbəti belə ciddi aralıq hesab olunmur. Məsələn, asanlıqla 700 ballıq sistemdə 650-660 bal nəticə göstərənlə, 700 balı toplayan şəxsin bilik və bacarıqlarında o qədər də ciddi fərqin olmadığını deyə bilərik”. Bu barədə Modern.az-a açıqlamasında elm və təhsil eksperti Elmin Nuri deyib. Ekspertin sözlərinə görə, buradakı fərq yalnız bir neçə sualla bağlıdır: “Bir çoxu hətta 1 və ya 2 sualı cavablandıra bilmədiyi üçün maksimal nəticədən məhrum olunublar. Buna görə də biz istər 700, istərsə də hər mərhələ üzrə maksimal nəticə olan 300 və 400 balları toplayan şəxsləri digərlərindən çox da fərqləndirməməliyik”."
     },
     {
-        id: 31,
+        id: 33,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745257283_1cbc47dc-dffe-4191-a650-ec7eab7c82f5_envatooo121.jpg",
         title: "Buraxılışda 250 və daha çox bal toplayanların NƏZƏRİNƏ!",
         category: "Təhsil",
@@ -288,7 +289,7 @@ export const data = [
             "Yalnız Milli Müdafiə Universiteti tərəfindən təqdim olunan beynəlxalq təhsil əməkdaşlığı çərçivəsində, xüsusi təyinatlı təhsil müəssisələrinin kursantlarına unikal bir imkan təqdim olunur.  Modern.az xəbər verir ki, kursantlar qəbul balı və şəxsi istəkləri əsasında Türkiyə, Almaniya, İtaliya, Koreya və Rusiya kimi dünyanın aparıcı ölkələrinin nüfuzlu hərbi təhsil müəssisələrində tam dövlət təminatı ilə təhsillərini davam etdirmək imkanı əldə edirlər."
     },
     {
-        id: 32,
+        id: 34,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745238593_1743490896_repetitor.jpg",
         title: "Azərbaycanda repetitorluq dövrü BAŞA ÇATIR",
         category: "Təhsil",
@@ -297,7 +298,7 @@ export const data = [
             "Modern.az-ın məlumatına görə, təhsil eksperti Məzahir Məmmədli bildirib ki, illərdir təhsilin “olmazsa-olmazı” kimi qəbul etdiyimiz repetitorluq sistemi tədricən sıradan çıxır.DİM-in qismən mövqe yumşaltması həm şagirdlərin, həm də valideynlərin üzünü güldürüb. Artıq son iki ilin nəticəsinə görə maksimum nəticə göstərən şagird sayı təxminən 100 nəfərə çatıb (keçən il 55 bu il bu rəqəm 43-dür). Bu nəticələr arasında yalnız məktəb təhsili ilə uğur qazanan, repetitor yanına getməyən şagirdlər də var.“Bunker müəllimlər” dövrü kimi tanınan 1994-95-ci illərdən bu yana formalaşmış sistem artıq arxada qalır. Bu il müxtəlif liseylər, gimnaziyalar, hətta kənd məktəblərindən belə yüksək nəticə göstərən şagirdlərin sayı artıb. Nümunə kimi bu günlərdə sosial şəbəklərdəki müzakirələri göstərə bilərik. Gəncədə bir liseyin şagirdləri 90% yüksək nəticə əldə edib, Lənkəranın Vilavur kəndindən olan məzunların əksəriyyəti isə repetitor dəstəyi olmadan yüksək nəticələr göstəriblər. Ucqar rayonlardan maksimum 300 ballıq bir neçə məzunlarımız oldu"
     },
     {
-        id: 33,
+        id: 35,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
         title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
         category: "Təhsil",
@@ -306,7 +307,7 @@ export const data = [
             "Azərbaycanda bəzi məktəblərdə siniflərdəki şagird sayı normadan artıq olur. Bu, nəinki tədrisin keyfiyyətinə ciddi təsir göstərir, həm də şagirdlərin fiziki və psixoloji vəziyyətinə mənfi təsir göstərə bilir. Bu cür sıxlıq şəraitində müəllim hər bir şagirdə fərdi yanaşmaqda çətinlik çəkir, nəticədə təhsil prosesində keyfiyyət azalır. “Ümumi təhsil haqqında” Qanunun 12.8-ci maddəsinə uyğun olaraq sinif otağının bir şagird üçün müəyyən edilmiş sahə normativi nəzərə alınmalıdır. Dövlət ümumi təhsil müəssisəsində ibtidai (I-IV siniflər), ümumi orta (V-IX siniflər) və tam orta (X-XI siniflər) təhsil səviyyələri üzrə siniflər (təmayül siniflər istisna olmaqla) şagirdlərin sayı 20 nəfərdən az olmamaqla təşkil edilir. Eyni bir sinifdə şagirdlərin sayı 30 nəfərdən çox olduqda və ya şagirdlərin bir sinifdə tədrisinə sinif otağının ölçüsü imkan vermədikdə, həmin sinif üzrə ikinci paralel sinif təşkil edilir."
     },
     {
-        id: 33,
+        id: 36,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
         title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
         category: "SouTime",
@@ -315,7 +316,7 @@ export const data = [
             "Azərbaycanda bəzi məktəblərdə siniflərdəki şagird sayı normadan artıq olur. Bu, nəinki tədrisin keyfiyyətinə ciddi təsir göstərir, həm də şagirdlərin fiziki və psixoloji vəziyyətinə mənfi təsir göstərə bilir. Bu cür sıxlıq şəraitində müəllim hər bir şagirdə fərdi yanaşmaqda çətinlik çəkir, nəticədə təhsil prosesində keyfiyyət azalır. “Ümumi təhsil haqqında” Qanunun 12.8-ci maddəsinə uyğun olaraq sinif otağının bir şagird üçün müəyyən edilmiş sahə normativi nəzərə alınmalıdır. Dövlət ümumi təhsil müəssisəsində ibtidai (I-IV siniflər), ümumi orta (V-IX siniflər) və tam orta (X-XI siniflər) təhsil səviyyələri üzrə siniflər (təmayül siniflər istisna olmaqla) şagirdlərin sayı 20 nəfərdən az olmamaqla təşkil edilir. Eyni bir sinifdə şagirdlərin sayı 30 nəfərdən çox olduqda və ya şagirdlərin bir sinifdə tədrisinə sinif otağının ölçüsü imkan vermədikdə, həmin sinif üzrə ikinci paralel sinif təşkil edilir."
     },
     {
-        id: 33,
+        id: 37,
         img: "https://files.modern.az/photo/orginal/2025/04/21/1745222533_mekteb.jpg",
         title: "Bir müəllim 40-45 şagird - Məktəblərdə şagird sıxlığı necə olmalıdır?",
         category: "Biznes",

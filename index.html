@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slider.css">
     <!-- <link rel="stylesheet" href="css/singlePage.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
@@ -33,7 +34,7 @@
 
 <body>
 
-    <div>
+    <div class="baseSextionDiv">
         <!-- Left Ad -->
         <div class="left">
             <img src="images/gif2.gif" alt="Advertising Banner" />
@@ -102,7 +103,7 @@
                         <!-- <li class="navList-item ">SouTime</li> -->
                         <!-- <li class="navList-item ">Biznes</li> -->
                         <!-- Categories will be added dynamically -->
-                        <li class="dropdown" id="dropdown">
+                        <li class="dropdown navList-item" id="dropdown">
                             Digərləri ▾
                             <ul class="dropdown-menu" id="dropdownMenu">
                                 <li>SouTime</li>
@@ -118,33 +119,40 @@
                 <!-- Center Content -->
                 <div class="center">
                     <div class="sliderBase">
-                        <div class="imgCard active">
-                            <img src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png" alt="">
+                        <a href="/singlePage.html">
+                            <div class="imgCard active">
+                                <img src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png" alt="">
 
-                            <!-- Xəbər məlumatları -->
-                            <div class="newsInfo">
-                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
-                                    məzmunla zənginləşir”...</h3>
+                                <!-- Xəbər məlumatları -->
+                                <div class="newsInfo">
+                                    <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                        məzmunla zənginləşir”...</h3>
+                                </div>
+
                             </div>
+                        </a>
 
-                        </div>
-
-                        <div class="imgCard">
-                            <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
-                            <div class="newsInfo">
-                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
-                                    məzmunla zənginləşir”...</h3>
+                        <a href="/singlePage.html">
+                            <div class="imgCard">
+                                <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg"
+                                    alt="">
+                                <div class="newsInfo">
+                                    <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                        məzmunla zənginləşir”...</h3>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="imgCard">
-                            <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
-                                alt="">
-                            <div class="newsInfo">
-                                <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
-                                    məzmunla zənginləşir”...</h3>
+                        <a href="/singlePage.html">
+                            <div class="imgCard">
+                                <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
+                                    alt="">
+                                <div class="newsInfo">
+                                    <h3 class="newsTitle">Prezident: “Azərbaycan-Çin strateji tərəfdaşlığı yeni müsbət
+                                        məzmunla zənginləşir”...</h3>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Prev / Next düymələri -->
                         <button class="prevBtn">❮</button>
@@ -157,8 +165,9 @@
 
 
                     <!-- News Cards -->
-                    <div class="news-cards" id="news-container">
-
+                    <div class="news-cards" id="news-container"> </div>
+                    <div class="showMoreDiv">
+                        <butto class="showMoreBtn">DAHA ÇOX</butto>
                     </div>
                     <div class="aBlockWrap">
                         <div class="aBlockTitle">
@@ -174,7 +183,8 @@
                                         alt="" />
                                 </div>
                                 <div class="BigPostInfo">
-                                    <h2 class="BigPostTitle">Bizim Title 1</h2>
+                                    <h2 class="BigPostTitle">Azərbaycan Gürcüstanı enerji böhranından necə XİLAS ETDİ?
+                                    </h2>
                                     <div class="BigPostExtra">
                                         <div class="postCategory">Kateqoriya</div>
                                         <div class="postDate">12:00</div>
@@ -188,7 +198,8 @@
                                         alt="" />
                                 </div>
                                 <div class="BigPostInfo">
-                                    <h2 class="BigPostTitle">Bizim Title 2</h2>
+                                    <h2 class="BigPostTitle">Azərbaycan Gürcüstanı enerji böhranından necə XİLAS ETDİ?
+                                    </h2>
                                     <div class="BigPostExtra">
                                         <div class="postCategory">Kateqoriya</div>
                                         <div class="postDate">13:00</div>
@@ -202,7 +213,8 @@
                                         alt="" />
                                 </div>
                                 <div class="BigPostInfo">
-                                    <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                    <h2 class="BigPostTitle">Azərbaycan Gürcüstanı enerji böhranından necə XİLAS ETDİ?
+                                    </h2>
                                     <div class="BigPostExtra">
                                         <div class="postCategory">Kateqoriya</div>
                                         <div class="postDate">14:00</div>
@@ -216,7 +228,8 @@
                                         alt="" />
                                 </div>
                                 <div class="BigPostInfo">
-                                    <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                    <h2 class="BigPostTitle">Azərbaycan Gürcüstanı enerji böhranından necə XİLAS ETDİ?
+                                    </h2>
                                     <div class="BigPostExtra">
                                         <div class="postCategory">Kateqoriya</div>
                                         <div class="postDate">14:00</div>
@@ -229,7 +242,8 @@
                                         alt="" />
                                 </div>
                                 <div class="BigPostInfo">
-                                    <h2 class="BigPostTitle">Bizim Title 3</h2>
+                                    <h2 class="BigPostTitle">Azərbaycan Gürcüstanı enerji böhranından necə XİLAS ETDİ?
+                                    </h2>
                                     <div class="BigPostExtra">
                                         <div class="postCategory">Kateqoriya</div>
                                         <div class="postDate">14:00</div>
@@ -244,7 +258,7 @@
                     <div class="right-sidebar" id="right-sidebar">
                         <div class="homeBlogCard">
                             <div class="homeRightSideHeader">
-                                <h3>Basliq 1</h3>
+                                <h3>Müsabiqə</h3>
                             </div>
                             <a href="./singlePage.html" class="rightLink">
                                 <div class="sidebar-card">

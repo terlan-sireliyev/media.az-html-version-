@@ -90,7 +90,7 @@
     border-bottom: border 2px solid green;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 }
 
 .newsMeta {
