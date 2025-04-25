@@ -9,10 +9,10 @@
 
 /* Layout üçün Flex */
 body>div {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
-
+    /* overflow-x: hidden */
 }
 
 
@@ -82,4 +82,38 @@ header {
     }
 
 
+}
+
+@media (max-width: 768px) {
+    body>div {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .left img,
+    .right img {
+        height: auto;
+        position: relative;
+    }
+
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rightCenterMenu {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:500px) {
+    .center {
+        /* width: 50%; */
+    }
 }
