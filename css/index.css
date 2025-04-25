@@ -287,6 +287,11 @@
     padding: 0px 5px;
 }
 
+.homeBlogCard a {
+    text-decoration-line: none;
+
+}
+
 .sidebar-title {
     font-size: 17px;
     color: #111;
