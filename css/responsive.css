@@ -474,7 +474,7 @@
 
 @media (max-width:407px) {
     .searchDiv input[type="text"] {
-        width: 55vw;
+        width: 66vw;
         /* vh yox, vw istifadə et */
         max-width: 100%;
         /* heç vaxt div çölünə çıxmasın */
@@ -505,7 +505,7 @@
 
 @media (max-width:365px) {
     .searchDiv input[type="text"] {
-        width: 52vw;
+        width: 61vw;
         /* vh yox, vw istifadə et */
         max-width: 100%;
         /* heç vaxt div çölünə çıxmasın */
