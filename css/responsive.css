@@ -227,6 +227,13 @@
         top: 0;
         z-index: 8;
     }
+
+    .searchDiv {
+        position: absolute;
+        right: 25px;
+        top: -15px;
+        z-index: 10;
+    }
 }
 
 /* 920px və aşağı */
@@ -376,7 +383,57 @@
     .card img {
         height: 160px;
     }
+
+    .searchDiv {
+        position: absolute;
+        right: 0px;
+        top: 41px;
+        z-index: 10;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .searchDiv input[type="text"] {
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 300px;
+        transition: width 0.3s ease;
+        outline: none;
+    }
 }
+
+@media (max-width:590px) {
+    .searchDiv {
+        position: fixed;
+        /* daha stabil ola bilər */
+        right: 0;
+        left: 0;
+        top: 47px;
+        z-index: 1000;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .searchDiv input[type="text"] {
+        width: 64vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+
+    .searchDiv button {
+        flex-shrink: 0;
+    }
+}
+
 
 /* 540px və aşağı */
 @media (max-width:540px) {
@@ -406,6 +463,24 @@
     }
 }
 
+@media (max-width:450px) {
+    .searchDiv input[type="text"] {
+        width: 60vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+}
+
+@media (max-width:407px) {
+    .searchDiv input[type="text"] {
+        width: 55vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+}
+
 /* 400px və aşağı */
 @media (max-width:400px) {
     .card {
@@ -425,6 +500,15 @@
 
     .sidebar-title {
         font-size: 15px;
+    }
+}
+
+@media (max-width:365px) {
+    .searchDiv input[type="text"] {
+        width: 52vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
     }
 }
 

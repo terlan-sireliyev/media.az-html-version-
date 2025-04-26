@@ -110,6 +110,10 @@ header {
     color: #00b140;
 }
 
+.searchIcon {
+    cursor: pointer;
+}
+
 /* navbarın üzərində yerləşən header side end */
 
 
@@ -263,6 +267,8 @@ header {
     background-color: #0056b3;
 }
 
+
+
 /* Çıxış düyməsi */
 .closeSearchİnput {
     background-color: #dc3545;
@@ -278,6 +284,7 @@ header {
 .closeSearchİnput:hover {
     background-color: #b02a37;
 }
+
 
 /* Layout Mərkəzləşdirmə */
 .layout {
