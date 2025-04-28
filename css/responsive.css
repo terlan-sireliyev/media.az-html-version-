@@ -207,6 +207,7 @@
 
 
 
+
     .hamburgerIcon i {
         padding: 0px;
         margin-top: -3px;
@@ -239,6 +240,10 @@
 
     .social-icons {
         margin-right: 50px;
+    }
+
+    .searchIcon {
+        font-size: 18px;
     }
 }
 
