@@ -1,185 +1,3 @@
- .headerClasster {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 0px;
-     background-color: white;
-     position: sticky;
-     top: 0;
-     z-index: 9999;
- }
-
- .socialIconsBase {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     gap: 10px;
-     position: relative;
- }
-
-
- .social-icons {
-     margin-top: 0px !important;
-     /* background: green; */
-     /* padding: 0; */
-     margin-top: -30px;
- }
-
- .social-icons i {
-     display: flex;
-     justify-content: center;
-     /* place-items: center; */
-     /* align-content: center; */
-     align-items: center;
-     /* gap: 25px; */
-     padding: 10px;
-     width: 40px;
-     /* margin-top: 0; */
-     /* font-size: 55px; */
-     /* background: gold; */
- }
-
-
-
-
-
-
-
- /* Logo */
- .logoNavbar {
-     font-size: 24px;
-     font-weight: bold;
-     margin-bottom: 0;
- }
-
- .logoNavbar a {
-     text-decoration-line: none;
-     color: #000;
- }
-
- .logoNavbar a span {
-     color: #00b140;
- }
-
- /* Sosial ikonlar */
- .social-icons {
-     margin-top: 10px;
-     display: flex;
-     justify-content: center;
-     gap: 10px;
- }
-
- .social-icons i {
-     font-size: 18px;
-     cursor: pointer;
- }
-
- .inputAndClose {
-     position: relative;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Layout Mərkəzləşdirmə */
- .layout {
-     display: flex;
-     justify-content: center;
-     gap: 10px;
-     /* padding: 20px; */
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* singlePage center side start */
  .singlePageGrid {
      display: flex;
@@ -357,21 +175,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* Lent xeberler start */
  .singleRight-sidebar {
      margin-top: 20px;
@@ -411,20 +214,16 @@
      cursor: pointer;
      text-decoration-line: none;
      color: #000;
-     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 
  }
 
  .sidebarSinglePageg-card {
-     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
      gap: 10px;
      display: flex;
      margin-bottom: 15px;
      padding-bottom: 10px;
      border-bottom: 1px solid #c4c4c4;
      margin-top: 15px;
-     /* flex-direction: column;
-    align-items: flex-start; */
  }
 
  .sidebarSinglePageg-card img {
@@ -439,8 +238,6 @@
      flex-direction: column;
      gap: 10px;
      justify-content: space-between;
-     /* margin-top: 5px; */
-     /* padding: 5px; */
  }
 
  .signleSidebar-title {
@@ -485,7 +282,6 @@
      color: #000;
      margin-top: 15px;
      display: block;
-     /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
 
  }
 
@@ -567,47 +363,10 @@
 
 
 
-
- @media (max-width: 1290px) {
-
-     .left,
-     .right {
-         display: none;
-     }
- }
-
- @media (max-width: 1130px) {
-     .navList {
-         gap: 25px;
-     }
- }
-
- @media (max-width: 1024px) and (min-width: 769px) {
-
-     .left,
-     .right {
-         width: 120px;
-     }
-
-     .center {
-         margin: 0 0px;
-     }
- }
-
  @media (max-width: 1150px) {
 
      .rightCenterMenu {
          width: 100%;
-     }
-
-     .right-sidebar {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         gap: 20px;
-     }
-
-     .homeBlogCard:not(:first-child) {
-         margin-top: 0;
      }
 
      .blogContent {
@@ -630,39 +389,10 @@
 
  }
 
- @media (max-width: 775px) {
-     .bigPost {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
-         gap: 20px;
-     }
- }
 
 
 
  @media (max-width: 768px) {
-     body>div {
-         flex-direction: column;
-     }
-
-     .left,
-     .right {
-         width: 100%;
-         text-align: center;
-         padding: 15px;
-     }
-
-     header {
-         padding: 0px 10px;
-     }
-
-     .center {
-         margin: 0 auto;
-         max-width: 100%;
-         width: 100%;
-     }
-
-
 
      .BigPostImage {
          height: 180px;
@@ -672,19 +402,12 @@
          display: flex;
          flex-direction: column;
      }
-
-     .miniPost ul {
-         width: 100%;
-     }
-
-
  }
 
 
  @media (max-width:500px) {
      .rightLink {
          margin-top: 0px;
-         /* background-color: red; */
      }
 
      .meta {

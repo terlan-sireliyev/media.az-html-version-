@@ -286,10 +286,7 @@
         justify-content: center;
     }
 
-    .footerColumn ul {
-        columns: 2;
-        column-gap: 80px !important;
-    }
+
 
     .socialIcons {
         justify-content: center;

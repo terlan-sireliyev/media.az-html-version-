@@ -52,12 +52,17 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    columns: 3;
-    column-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 39px;
+    /* 10px aşağı boşluq, 39px sağ boşluq */
+    max-width: 380px;
+    /* ya da istədiyin ölçü */
 }
 
 .footerListItem {
-    margin: 5px 0px;
+    width: calc(33.333% - 26px);
+    /* 3 sütuna bölürük, sağ boşluğa uyğun hesablama */
 }
 
 .footerListItem a {
@@ -72,16 +77,6 @@
     cursor: pointer;
 }
 
-/* .footerColumn ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    transition: opacity 0.3s ease;
-} */
-
-/* .footerListItem a:hover {
-    opacity: 0.7;
-} */
 
 .followUs {
     font-weight: 600;
