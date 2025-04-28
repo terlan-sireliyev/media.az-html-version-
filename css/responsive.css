@@ -340,9 +340,9 @@
         padding: 0px 8px;
     }
 
-    .social-icons {
+    /* .social-icons {
         display: none;
-    }
+    } */
 
     .BigPostImage {
         height: 180px;
@@ -372,6 +372,11 @@
     .card img {
         height: 120px;
     }
+
+    .social-icons {
+        display: none;
+    }
+
 }
 
 /* 650px və aşağı */
