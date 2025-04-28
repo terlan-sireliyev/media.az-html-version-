@@ -61,7 +61,7 @@
     .layout {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        /* margin-top: -15px; */
     }
 
     .homeBlogCard:not(:first-child) {
@@ -223,12 +223,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 0px;
+        /* padding: 15px 0px; */
         background-color: white;
         border-bottom: 1px solid #00b140;
         position: sticky;
         top: 0;
         z-index: 8;
+        /* margin-bottom: 15px; */
     }
 
     .searchDiv {
@@ -250,7 +251,7 @@
 /* 920px və aşağı */
 @media (max-width: 920px) {
     .sliderBase {
-        margin-top: 0;
+        margin-top: 5px;
         z-index: 0;
     }
 }
@@ -269,7 +270,7 @@
     }
 
     .sliderBase {
-        margin-top: 0px;
+        margin-top: 5px;
     }
 }
 

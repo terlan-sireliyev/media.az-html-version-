@@ -595,10 +595,6 @@
  }
 
  @media (max-width: 1150px) {
-     .layout {
-         display: flex;
-         flex-direction: column;
-     }
 
      .rightCenterMenu {
          width: 100%;
@@ -615,7 +611,8 @@
      }
 
      .blogContent {
-         padding: 0px 0px;
+         padding-top: 0px !important;
+         margin-top: 5px !important;
 
      }
 
@@ -665,9 +662,7 @@
          width: 100%;
      }
 
-     .social-icons {
-         display: none;
-     }
+
 
      .BigPostImage {
          height: 180px;
