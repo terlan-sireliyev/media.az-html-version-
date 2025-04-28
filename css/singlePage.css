@@ -193,6 +193,7 @@
      flex: 3;
      background: #fff;
      padding: 10px 0px;
+     margin-top: 20px;
  }
 
  .blogContent img {
@@ -208,7 +209,6 @@
      margin-bottom: 1rem;
      color: #222;
      font-weight: 700;
-     margin-top: 20px;
      padding: 0;
 
  }
@@ -243,6 +243,7 @@
  .description {
      font-size: 18px;
      line-height: 1.7;
+     font-weight: 500;
  }
 
  /* singlePage center side end */
@@ -451,8 +452,8 @@
      display: box;
      -webkit-box-orient: vertical;
      box-orient: vertical;
-     -webkit-line-clamp: 2;
-     line-clamp: 2;
+     -webkit-line-clamp: 3;
+     line-clamp: 3;
      overflow: hidden;
      text-overflow: ellipsis;
  }
@@ -615,6 +616,7 @@
 
      .blogContent {
          padding: 0px 0px;
+
      }
 
      .singleSimilarNews {
