@@ -112,6 +112,7 @@ header {
 
 .searchIcon {
     cursor: pointer;
+    font-size: 18px;
 }
 
 /* navbarın üzərində yerləşən header side end */
@@ -266,6 +267,12 @@ header {
 .searchDiv button:nth-of-type(2):hover {
     background-color: #0056b3;
 }
+
+.searchAndHamburger {
+    display: flex;
+    gap: 10px;
+}
+
 
 
 
