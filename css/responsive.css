@@ -206,6 +206,8 @@
         display: none;
     }
 
+
+
     .hamburgerIcon i {
         padding: 0px;
         margin-top: -3px;
@@ -221,8 +223,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0px;
+        padding: 15px 0px;
         background-color: white;
+        border-bottom: 1px solid #00b140;
         position: sticky;
         top: 0;
         z-index: 8;
@@ -469,6 +472,10 @@
         /* vh yox, vw istifadə et */
         max-width: 100%;
         /* heç vaxt div çölünə çıxmasın */
+    }
+
+    .headerClasster {
+        padding: 10px 0px;
     }
 }
 
