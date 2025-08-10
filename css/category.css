@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .news-cardsCategory {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -143,4 +144,151 @@
         object-fit: cover;
     }
 
+=======
+.news-cardsCategory {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-width: 1000px;
+    margin-top: -12px !important;
+    margin: 0 auto;
+    padding: 20px 0px;
+    min-height: 550px;
+    /* height: 100%; */
+}
+
+
+
+.news-cardCategory p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.card-category {
+    background-color: #fff !important;
+    border: 1px solid #ddd;
+    overflow: hidden !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer !important;
+    min-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    border-bottom: 5px solid #00bbd4 !important;
+    border-radius: 10px !important;
+}
+
+.card-category:hover {
+    border-bottom: 5px solid #1256cba9;
+    box-shadow: 0 10px 15px rgba(18, 86, 203, 0.3);
+}
+
+.card-category img {
+    width: 100%;
+    height: 140px;
+    aspect-ratio: 16 / 9;
+}
+
+.card-category h3 {
+    font-size: 15px;
+    color: #111;
+    outline: none;
+    margin-top: 4px;
+    line-height: 1.5;
+    padding: 0px 5px;
+    margin-bottom: 35px;
+}
+
+.title-category {
+    background-color: #00bbd4;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* daha cox goster input start */
+.showMoreDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.showMoreBtn {
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+}
+
+.showMoreBtn:hover {
+    color: #00b140;
+}
+
+@media (max-width: 850px) {
+    .news-cardsCategory {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .card-category img {
+        height: 160px;
+    }
+}
+
+@media (max-width:700px) {
+    .news-cardsCategory {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .card-category img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:650px) {
+    .news-cardsCategory {
+        width: 100%;
+    }
+
+}
+
+/* 620px və aşağı */
+@media (max-width:620px) {
+    .card-category img {
+        height: 160px;
+    }
+}
+
+@media (max-width:540px) {
+    .newsTitle {
+        font-size: 16px;
+        font-weight: bold;
+        word-break: break-word;
+    }
+}
+
+@media (max-width:470px) {
+    .card-category {
+        min-height: 100%;
+    }
+
+    .news-cardsCategory {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 6px;
+    }
+
+    .card-category img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7
 }

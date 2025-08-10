@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hamburgerIcon {
     display: flex;
     gap: 15px;
@@ -69,4 +70,77 @@
     margin-top: 2px;
     cursor: pointer;
     margin-right: 10px;
+=======
+.hamburgerIcon {
+    display: flex;
+    gap: 15px;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.hamburgerIcon i {
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.mobileMenu {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background: #f9f9f9;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.mobileMenu.active {
+    transform: translateX(0);
+}
+
+.hamburgerUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.hamburgerLi {
+    border-bottom: 1px solid #eee;
+}
+
+.hamburgerLink {
+    display: block;
+    padding: 14px 22px;
+    color: #222;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hamburgerLink:hover {
+    background-color: #efefef;
+    color: #000;
+}
+
+.hamburgerDivider {
+    height: 2px;
+}
+
+.hamburgerClose {
+    padding: 10px;
+    text-align: right;
+}
+
+.hamburgerClose i {
+    font-size: 25px;
+    margin-top: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
     background-color: #140202;
     color: white;
@@ -136,4 +137,144 @@
 /* .active {
     color: #00cc00;
     border-bottom: 2px solid #00cc00;
+=======
+.footer {
+    background-color: #140202;
+    color: white;
+    padding: 60px 30px;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
+    margin-top: 20px;
+    /* max-width: 1184px; */
+    width: 100%;
+    margin: auto;
+}
+
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logoBase {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logoIcon {
+    background-color: white;
+    color: #cc2b24;
+    font-weight: bold;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 39px;
+    max-width: 380px;
+    text-align: left;
+}
+
+.footerListItem {
+    width: calc(33.333% - 26px);
+}
+
+.footerListItem a {
+    text-decoration-line: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footerListItem:hover {
+    text-decoration-line: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.followUs {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 14px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.socialIcons i {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #fff;
+}
+
+.socialIcons i:hover {
+    transform: scale(1.2);
+}
+
+.createdBy {
+    font-size: 14px;
+}
+
+.createdBy span {
+    font-weight: bold;
+    color: #ffc94a;
+}
+
+.footerTop {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footerTop li a {
+    text-decoration-line: none;
+    color: #fff;
+}
+
+.footerBottom {
+    list-style-type: none;
+    padding: 0;
+    /* font-family: 'Bitter', Arial, Helvetica, sans-serif; */
+    font-size: 15px;
+    color: white;
+}
+
+.footerBottom li {
+    margin: 2px 0px;
+}
+
+/* .active {
+    color: #00cc00;
+    border-bottom: 2px solid #00cc00;
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7
 } */

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Universal adjustments */
 @media (max-width: 1680px) {
   .footer {
@@ -560,3 +561,558 @@
     font-size: 11px;
   }
 }
+=======
+/* Universal adjustments */
+@media (max-width: 1680px) {
+    .footer {
+        /* max-width: 100%; */
+        display: flex;
+    }
+}
+
+/* 1520px - 1290px arası */
+@media (max-width: 1520px) and (min-width: 1360px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1360px) and (min-width: 1310px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1313px) and (min-width: 1290px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
+        gap: 20px;
+    }
+}
+
+/* 1290px və aşağı */
+@media (max-width: 1290px) {
+
+    .left,
+    .right {
+        display: none;
+    }
+}
+
+/* 1200px və aşağı */
+@media (max-width: 1200px) {
+    .navList {
+        display: flex;
+    }
+}
+
+/* 1167px və aşağı */
+@media (max-width: 1167px) {
+    .bigPost {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+        gap: 20px;
+    }
+}
+
+/* 1150px və aşağı */
+@media (max-width: 1150px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: -15px; */
+    }
+
+    .homeBlogCard:not(:first-child) {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+        gap: 5px;
+    }
+
+    .homeBlogCard a {
+        text-decoration-line: none;
+    }
+
+    .homeBlogCardAnother {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+    }
+
+    .sidebar-card img {
+        height: 150px;
+    }
+
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
+    .center,
+    .rightCenterMenu {
+        width: 100%;
+    }
+
+    /* .footer {
+        max-width: 100%;
+    } */
+}
+
+/* 1130px və aşağı */
+@media (max-width: 1130px) {
+    .navList {
+        gap: 25px;
+    }
+}
+
+/* 1024px - 769px arası */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .left,
+    .right {
+        width: 120px;
+    }
+
+    .center {
+        margin: 0 0px;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .navList {
+        gap: 23px;
+    }
+}
+
+/* 1000px və aşağı */
+@media (max-width: 1000px) {
+    .footerContainer {
+        justify-content: center;
+    }
+
+    .footerColumn ul {
+        columns: 4;
+    }
+
+    .footerColumn {
+        align-items: center;
+    }
+
+    .footerTop {
+        margin-left: 0px;
+    }
+
+    .logoBase {
+        text-align: center;
+    }
+}
+
+/* 1000px - 930px arası */
+@media (max-width: 1000px) and (min-width: 930px) {
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        height: auto;
+        min-height: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 10px 0px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card-content .category {
+        font-size: 14px;
+        color: #00b140;
+    }
+}
+
+/* 930px və aşağı */
+@media (max-width:930px) {
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navList {
+        display: flex;
+        gap: 0px;
+    }
+
+    .navbarNav {
+        display: none;
+    }
+
+
+
+
+    .hamburgerIcon i {
+        padding: 0px;
+        margin-top: -3px;
+        margin-right: 0px;
+        display: block;
+    }
+
+    .navbar-wrapper {
+        margin-top: 0px;
+    }
+
+    .headerClasster {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 15px 0px; */
+        background-color: white;
+        border-bottom: 1px solid #00b140;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+        /* margin-bottom: 15px; */
+    }
+
+    .searchDiv {
+        position: absolute;
+        right: 25px;
+        top: -15px;
+        z-index: 10;
+    }
+
+    .social-icons {
+        margin-right: 50px;
+    }
+
+    .searchIcon {
+        font-size: 17px;
+    }
+}
+
+/* 920px və aşağı */
+@media (max-width: 920px) {
+    .sliderBase {
+        margin-top: 5px;
+        z-index: 0;
+    }
+}
+
+/* 820px və aşağı */
+@media (max-width:820px) {
+
+    .navbarNav {
+        display: none;
+    }
+
+
+
+    .navSeacrBaseDiv {
+        display: block;
+    }
+
+    .sliderBase {
+        margin-top: 5px;
+    }
+}
+
+/* 792px və aşağı */
+@media (max-width: 792px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .createdBy {
+        margin-top: 10px;
+    }
+
+    .footerTop {
+        margin-left: 0;
+    }
+
+    .footerBottom {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* 775px və aşağı */
+@media (max-width: 775px) {
+    .bigPost {
+        grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
+        gap: 20px;
+    }
+}
+
+/* 768px və aşağı */
+@media (max-width: 768px) {
+    body>div {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .center {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .rightCenterMenu {
+        width: 100%;
+    }
+
+    header {
+        padding: 0px 8px;
+    }
+
+    /* .social-icons {
+        display: none;
+    } */
+
+    .BigPostImage {
+        height: 180px;
+    }
+
+    .aBlockWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .miniPost ul {
+        width: 100%;
+    }
+}
+
+/* 720px və aşağı */
+@media (max-width:720px) {
+    .navList {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* 670px və aşağı */
+@media (max-width:670px) {
+    .card img {
+        height: 120px;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+}
+
+/* 650px və aşağı */
+@media (max-width:650px) {
+    .news-cards {
+        width: 100%;
+    }
+}
+
+/* 620px və aşağı */
+@media (max-width:620px) {
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        height: 160px;
+    }
+
+    .searchDiv {
+        position: absolute;
+        right: 0px;
+        top: 41px;
+        z-index: 10;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .searchDiv input[type="text"] {
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 300px;
+        transition: width 0.3s ease;
+        outline: none;
+    }
+}
+
+@media (max-width:590px) {
+    .searchDiv {
+        position: fixed;
+        /* daha stabil ola bilər */
+        right: 0;
+        left: 0;
+        top: 47px;
+        z-index: 1000;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .searchDiv input[type="text"] {
+        width: 64vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+
+    .searchDiv button {
+        flex-shrink: 0;
+    }
+}
+
+
+/* 540px və aşağı */
+@media (max-width:540px) {
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        position: absolute;
+        top: 40%;
+    }
+
+    .imgCard {
+        height: 280px;
+    }
+
+    .sliderBase {
+        min-height: 284px;
+    }
+
+    .newsTitle {
+        font-size: 16px;
+        font-weight: bold;
+        word-break: break-word;
+    }
+}
+
+@media (max-width:450px) {
+    .searchDiv input[type="text"] {
+        width: 60vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+
+    .headerClasster {
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width:407px) {
+    .searchDiv input[type="text"] {
+        width: 66vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+}
+
+/* 400px və aşağı */
+@media (max-width:400px) {
+    .card {
+        min-height: 100%;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 6px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .sidebar-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:365px) {
+    .searchDiv input[type="text"] {
+        width: 61vw;
+        /* vh yox, vw istifadə et */
+        max-width: 100%;
+        /* heç vaxt div çölünə çıxmasın */
+    }
+}
+
+/* 357px və aşağı */
+@media (max-width:357px) {
+    .sidebar-meta {
+        font-size: 13px;
+    }
+}
+
+/* 337px və aşağı */
+@media (max-width:337px) {
+    .sidebar-meta {
+        font-size: 11px;
+    }
+}
+
+/* 316px və aşağı */
+@media (max-width:316px) {
+    .sidebar-meta {
+        font-size: 11px;
+    }
+}
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .rightCenterMenu {
     width: 240px;
 }
@@ -71,4 +72,79 @@
 
 .sidebar-meta i {
     margin-right: 4px;
+=======
+.rightCenterMenu {
+    width: 240px;
+}
+
+.right-sidebar {
+    margin-top: 20px;
+}
+
+.homeRightSideHeader {
+    background: #00bbd4;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.homeBlogCard a {
+    text-decoration-line: none;
+}
+
+.rightLink {
+    cursor: pointer;
+    text-decoration-line: none;
+    color: #000;
+}
+
+.right-sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.sidebar-card {
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.sidebar-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    /* margin-top: 5px; */
+    padding: 0px 5px;
+}
+
+.sidebar-title {
+    font-size: 17px;
+    color: #111;
+    outline: none;
+    font-weight: bold;
+    /* word-break: break-all; */
+}
+
+.sidebar-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    color: gray;
+    padding: 0px 0px;
+}
+
+.sidebar-meta i {
+    margin-right: 4px;
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* singlePage center side start */
  .singlePageGrid {
      display: flex;
@@ -434,4 +435,441 @@
      .meta {
          font-size: 10px;
      }
+=======
+ /* singlePage center side start */
+ .singlePageGrid {
+     display: flex;
+     gap: 20px;
+     align-items: flex-start;
+     flex-wrap: wrap;
+ }
+
+ /* Əsas Xəbər */
+ .blogContent {
+     flex: 3;
+     background: #fff;
+     padding: 10px 0px;
+     margin-top: 20px;
+ }
+
+ .blogContent img {
+     width: 100%;
+     height: 350px;
+     border-radius: 10px;
+     margin-bottom: 15px;
+ }
+
+ .blogContent,
+ .news-title {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     color: #222;
+     font-weight: 700;
+     padding: 0;
+
+ }
+
+ .meta {
+     font-size: 14px;
+     color: #666;
+     margin-bottom: 15px;
+ }
+
+ .meta .category,
+ .meta .time {
+     margin-right: 12px;
+ }
+
+ .meta i {
+     margin-right: 5px;
+     color: #0077cc;
+ }
+
+ .meta .views {
+     margin-right: 12px;
+     color: #666;
+ }
+
+ .meta .views i {
+     margin-right: 5px;
+     color: #0077cc;
+ }
+
+
+ .description {
+     font-size: 18px;
+     line-height: 1.7;
+     font-weight: 500;
+ }
+
+ /* singlePage center side end */
+
+
+ /* singlePage center oxsar xeberler start */
+
+ .aBlockWrap {
+     margin-top: 20px;
+ }
+
+ .bigPost {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+     gap: 20px;
+ }
+
+ .BigPostImage {
+     height: 150px;
+     overflow: hidden;
+ }
+
+ .BigPostImage img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 8px;
+ }
+
+
+ .bigPost a {
+     border-bottom: 1px solid #eee;
+     padding-bottom: 10px;
+     text-decoration-line: none;
+ }
+
+ .aBlockTitle {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid black;
+     margin-bottom: 15px;
+     font-size: 18px;
+     padding-bottom: 5px;
+ }
+
+ .aAllShow a {
+     text-decoration-line: none;
+     color: black;
+ }
+
+ .aAllShow a:hover {
+     text-decoration-line: underline;
+     color: black;
+ }
+
+
+
+ .BigPostInfo {
+     margin-top: 10px;
+ }
+
+ .BigPostTitle {
+     font-size: 1.2rem;
+
+     color: black;
+     font-weight: bold;
+     margin-bottom: 5px;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .BigPostExtra {
+     display: flex;
+     justify-content: space-between;
+     font-size: 0.9rem;
+     color: gray;
+     margin-top: 15px;
+ }
+
+ .postCategory {
+     color: #007bff;
+ }
+
+
+ /* singlePage center oxsar xeberler end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Lent xeberler start */
+ .singleRight-sidebar {
+     margin-top: 20px;
+ }
+
+ .singleRight-sidebar h3 {
+     font-size: 18px;
+     margin-bottom: 10px;
+ }
+
+ .singleSimilarNews {
+     flex: 1;
+     /* min-width: 250px; */
+ }
+
+ .singlePageSimilarCard {
+     margin-top: 4px;
+     margin-bottom: 20px;
+ }
+
+ .singlePageSimilarCardLent {
+     background: #00bbd4;
+     color: #fff;
+     padding: 10px 10px;
+     border-radius: 3px;
+     margin-bottom: 5px;
+     text-align: center;
+ }
+
+ .singlePageSimilarCardLent h3 {
+     font-size: 16px;
+     margin-bottom: 0px;
+
+ }
+
+ .singlePageRightLink {
+     cursor: pointer;
+     text-decoration-line: none;
+     color: #000;
+
+ }
+
+ .sidebarSinglePageg-card {
+     gap: 10px;
+     display: flex;
+     margin-bottom: 15px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid #c4c4c4;
+     margin-top: 15px;
+ }
+
+ .sidebarSinglePageg-card img {
+     width: 70px;
+     height: 80px;
+     object-fit: cover;
+     border-radius: 4px;
+ }
+
+ .signleSidebar-content {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     justify-content: space-between;
+ }
+
+ .signleSidebar-title {
+     font-size: 16px;
+     color: #111;
+     outline: none;
+     font-weight: bold;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 3;
+     line-clamp: 3;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .signleSidebar-meta {
+     display: flex;
+     gap: 10px;
+     font-size: 12px;
+     color: gray;
+ }
+
+ .signleSidebar-meta i {
+     margin-right: 4px;
+ }
+
+ /* Lent xeberler end */
+
+
+
+
+ /* lentin altinda yerlesen bloglar start */
+ .similarCardAnother {
+     margin-bottom: 25px;
+ }
+
+ .rightLink {
+     cursor: pointer;
+     text-decoration-line: none;
+     color: #000;
+     margin-top: 15px;
+     display: block;
+
+ }
+
+ .sidebar-titleAnother {
+     word-break: break-all;
+     font-size: 18px;
+     font-weight: bold;
+     display: -webkit-box;
+     display: box;
+     -webkit-box-orient: vertical;
+     box-orient: vertical;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .sidebar-contentAnother {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     margin-top: 5px;
+
+ }
+
+ .sidebar-cardAnother img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+     border-radius: 4px;
+ }
+
+ .sidebar-meta {
+     display: flex;
+     gap: 10px;
+     font-size: 12px;
+     color: gray;
+ }
+
+ /* lentin altinda yerlesen bloglar end */
+
+
+
+
+
+
+ @media (max-width: 1520px) and (min-width: 1360px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(160px, 4fr));
+         gap: 20px;
+     }
+ }
+
+ @media (max-width: 1360px) and (min-width: 1310px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+         gap: 20px;
+     }
+ }
+
+ @media (max-width: 1313px) and (min-width: 1290px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(130px, 4fr));
+         gap: 20px;
+     }
+ }
+
+ @media (max-width: 1167px) {
+     .bigPost {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+         gap: 20px;
+     }
+ }
+
+
+
+
+ @media (max-width: 1150px) {
+
+     .rightCenterMenu {
+         width: 100%;
+     }
+
+     .blogContent {
+         padding-top: 0px !important;
+         margin-top: 5px !important;
+
+     }
+
+     .singleSimilarNews {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+
+     .similarCardAnother {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+         gap: 20px;
+     }
+
+
+ }
+
+
+
+
+ @media (max-width: 768px) {
+
+     .BigPostImage {
+         height: 180px;
+     }
+
+     .aBlockWrap {
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+
+ @media (max-width:500px) {
+     .rightLink {
+         margin-top: 0px;
+     }
+
+     .meta {
+         font-size: 13px;
+     }
+
+     .aBlockTitle h2 {
+         font-size: 18px;
+     }
+
+     .blogContent img {
+         height: 300px;
+     }
+ }
+
+ @media (max-width:353px) {
+     .meta {
+         font-size: 11px;
+     }
+ }
+
+ @media (max-width:314px) {
+     .meta {
+         font-size: 10px;
+     }
+>>>>>>> aac8d85f967a9afaa1e48fd0da975077ace9f3d7
  }
